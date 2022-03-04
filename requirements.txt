@@ -1,0 +1,7 @@
+# This file is for Binder.
+# https://mybinder.readthedocs.io/en/latest/using/config_files.html#requirements-txt-install-a-python-environment
+
+# Jupyter Notebook with i18n
+notebook>=6.1.0
+
+matplotlib>=3.2.2

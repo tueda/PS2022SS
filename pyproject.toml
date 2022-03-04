@@ -1,0 +1,84 @@
+[tool.poetry]
+name = "PS2022SS"
+version = "0.1.0"
+description = ""
+authors = ["Takahiro Ueda <tueda@st.seikei.ac.jp>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+jupyterlab = "^3.3.0"
+
+joblib = "^1.1.0"
+mkdocs = "^1.2.3"
+mkdocs-cinder = "^1.2.0"
+mkdocs-simple-hooks = "^0.1.5"
+
+# Same version as Google Colab (4 Mar 2022)
+matplotlib = "~3.2.2"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.17.0"
+taskipy = "^1.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = [
+    "E203", "W503", # for black
+    "S404", # import_subprocess
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+pretty = true
+show_error_codes = true
+strict = true
+warn_unreachable = true
+
+[[tool.mypy.overrides]]
+module = [
+    "joblib",
+    "nbconvert",
+    "nbformat",
+]
+ignore_missing_imports = true
+
+[tool.taskipy.tasks]
+prepare.cmd = "pre-commit install && pre-commit install --hook-type commit-msg && npm install"
+prepare.help = "sets up a development environment"
+
+make.cmd = "task make-footnotes && task make-imagelinks && task make-binderlinks"
+make.help = "makes page contents"
+
+make-footnotes.cmd = "python scripts/make-footnotes.py"
+make-footnotes.help = "makes footnotes in notebooks"
+
+make-imagelinks.cmd = "python scripts/make-imagelinks.py"
+make-imagelinks.help = "makes image links in notebooks"
+
+make-binderlinks.cmd = "python scripts/make-binderlinks.py"
+make-binderlinks.help = "make notebooks links in index pages"
+
+lint.cmd = "pre-commit run --all-files"
+lint.help = "runs linters"
+
+textlint.cmd = "python -c 'from scripts.convert import nb2md; nb2md()' && npx textlint -f pretty-error --cache docs/*.md *.md .converted/*.md"
+textlint.help = "runs textlint for notebooks"
+
+notebook.cmd = "jupyter notebook --no-browser"
+notebook.help = "starts Jupyter Notebook"
+
+serve.cmd = "mkdocs serve"
+serve.help = "starts a MkDocs server"
+
+viewer.cmd = "python scripts/viewer.py"
+viewer.help = "starts the answer viewer"
+
+viewer_cb.cmd = "python scripts/viewer.py --clipboard"
+viewer_cb.help = "starts the answer viewer with clipboard support"

@@ -1,0 +1,12 @@
+site_name: 物理シミュレーション
+
+theme:
+  name: cinder
+extra_css:
+  - "css/mystyle.css"
+markdown_extensions:
+    - attr_list
+plugins:
+  - mkdocs-simple-hooks:
+      hooks:
+        on_pre_build: "scripts.convert:nb2html"
