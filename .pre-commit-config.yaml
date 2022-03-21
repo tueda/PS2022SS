@@ -49,6 +49,14 @@ repos:
     -   id: mypy
         args: []
 
+-   repo: local
+    hooks:
+    -   id: nb-crossref
+        name: cross reference in notebooks
+        entry: python3 scripts/nb-crossref.py
+        language: python
+        files: \.ipynb$
+
 -   repo: https://github.com/nbQA-dev/nbQA
     rev: 1.2.3
     hooks:

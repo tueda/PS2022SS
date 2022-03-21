@@ -28,7 +28,8 @@ build-backend = "poetry.core.masonry.api"
 [tool.flake8]
 max-line-length = 88
 extend-ignore = [
-    "E203", "W503", # for black
+    "E203",
+    "W503", # for black
     "S404", # import_subprocess
 ]
 
@@ -42,11 +43,7 @@ strict = true
 warn_unreachable = true
 
 [[tool.mypy.overrides]]
-module = [
-    "joblib",
-    "nbconvert",
-    "nbformat",
-]
+module = ["joblib", "nbconvert", "nbformat"]
 ignore_missing_imports = true
 
 [tool.taskipy.tasks]
@@ -56,14 +53,11 @@ prepare.help = "sets up a development environment"
 make.cmd = "task make-footnotes && task make-imagelinks && task make-binderlinks"
 make.help = "makes page contents"
 
-make-footnotes.cmd = "python scripts/make-footnotes.py"
-make-footnotes.help = "makes footnotes in notebooks"
-
 make-imagelinks.cmd = "python scripts/make-imagelinks.py"
 make-imagelinks.help = "makes image links in notebooks"
 
 make-binderlinks.cmd = "python scripts/make-binderlinks.py"
-make-binderlinks.help = "make notebooks links in index pages"
+make-binderlinks.help = "makes notebook links in index pages"
 
 lint.cmd = "pre-commit run --all-files"
 lint.help = "runs linters"
