@@ -65,3 +65,12 @@ If so, try [this](https://stackoverflow.com/a/67619514).
 - [`develop`](https://github.com/tueda/PS2022SS/tree/develop): general development, including temporary versions
 - [`release`](https://github.com/tueda/PS2022SS/tree/release): push to deploy
 - [`gh-pages`](https://github.com/tueda/PS2022SS/tree/gh-pages): deployment target
+
+<!-- textlint-disable
+ja-technical-writing/sentence-length
+-->
+
+When forgotten how to push a branch to another branch in a remote repository (e.g., `develop:release`),
+see [here](https://stackoverflow.com/a/13897766).
+
+<!-- textlint-enable -->
