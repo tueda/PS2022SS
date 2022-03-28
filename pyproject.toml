@@ -50,8 +50,14 @@ ignore_missing_imports = true
 prepare.cmd = "pre-commit install && pre-commit install --hook-type commit-msg && npm install"
 prepare.help = "sets up a development environment"
 
-make.cmd = "task make-footnotes && task make-imagelinks && task make-binderlinks"
+make.cmd = "task make-crossref && task make-nbqa && task make-imagelinks && task make-binderlinks"
 make.help = "makes page contents"
+
+make-crossref.cmd = "pre-commit run nb-crossref --all-files"
+make-crossref.help = "makes cross references in notebooks"
+
+make-nbqa.cmd = "pre-commit run nbqa-black --all-files"
+make-nbqa.help = "runs notebook formatter/lint"
 
 make-imagelinks.cmd = "python scripts/make-imagelinks.py"
 make-imagelinks.help = "makes image links in notebooks"
