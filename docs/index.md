@@ -64,13 +64,11 @@ ja-technical-writing/ja-no-weak-phrase,
 jtf-style/4.1.1.句点(。)
 -->
 
-言うまでもありませんが、半年間の講義だけでPythonをマスターすることは不可能です。
-たとえばこの講義では次の事柄がカバーされていません。
-必要となったときに学習する必要があります。
+この講義では扱わないものの、よく使われるPythonの機能として次のものが挙げられます。これらについては、必要となったときに学習するとよいでしょう。
 
 - クラスの定義
 - ファイルの入出力
-- 辞書型
+- 辞書型などのデータ構造
 - 例外および例外処理
 
 さらに、次のことも知っておくと有益かもしれません。
@@ -100,10 +98,10 @@ ja-technical-writing/max-kanji-continuous-len
 - [Pythonで学ぶコンピュテーショナル・シンキングとデータ科学](https://wagtail.cds.tohoku.ac.jp/coda/python/index.html)（早川美徳氏）：
   ボリュームのある講義録。データ科学寄り。
 - [コンピュータ処理](https://amorphous.tf.chiba-u.jp/lecture.files/chem_computer/index.html)（大窪貴洋氏）：
-  化学屋さん向け（たぶん）のPythonの講義録。
+  化学屋さん寄り（たぶん）のPythonの講義録。
 - [Pythonプログラミング入門](https://utokyo-ipp.github.io/index.html)（東京大学数理・情報教育研究センター）：
   Pythonの詳細な講義録。
-- [プログラミング演習 Python 2019](https://hdl.handle.net/2433/245698)（喜多一氏）：
+- [プログラミング演習 Python 2021](https://hdl.handle.net/2433/265459)（喜多一氏、森村吉貴氏、岡本雅子氏）：
   PDFファイルとして公開されている講義録。
 - [機械学習帳](https://chokkan.github.io/mlnote/)（岡崎直観氏）：
   Pythonによる機械学習の講義資料。

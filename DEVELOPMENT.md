@@ -37,10 +37,11 @@ ja-technical-writing/no-mix-dearu-desumasu
 ja-engineering-paper/use-si-units
 -->
 
-As of 4th March 2022, Google Colaboratory and Binder use Python 3.7.12.
+As of 5th April 2022, Google Colaboratory uses Python 3.7.13 and Binder uses Python 3.7.12.
 Hence, we adapt Python 3.7 in this course.
+Note that Python 3.9.7 is available in the PC rooms via Anaconda 2.1.1.
 ```bash
-# Install Python 3.7 (hopefully 3.7.12) on Ubuntu 20.04.
+# Install Python 3.7 (presumably 3.7.13) on Ubuntu 20.04.
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
 sudo apt-get install python3.7
