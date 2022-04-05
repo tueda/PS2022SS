@@ -13,6 +13,8 @@ import nbformat
 
 StringList = List[str]
 
+ANSWER_MARKER = r"#\s*課題解答\s*\d[\d.]*"
+
 
 def copy_to_clipboard(text: str, check: bool = True) -> None:
     """Copy the given text to the clipboard."""
@@ -163,9 +165,7 @@ def parse_ipynb(path: Path) -> Tuple[List[StringList], List[str]]:
     ids = []
 
     for cell in nbformat.read(path, nbformat.NO_CONVERT).cells:
-        if cell["cell_type"] == "code" and re.search(
-            r"#\s*課題解答\d+\.\d+", cell["source"]
-        ):
+        if cell["cell_type"] == "code" and re.search(ANSWER_MARKER, cell["source"]):
             blocks.append(cell["source"].splitlines(keepends=False))
         if "id" in cell["metadata"]:
             if "id" not in cell or cell["id"] != cell["metadata"]["id"]:
@@ -179,7 +179,7 @@ def is_block_beginning(line: str) -> bool:
     """Return True for a beginning of a block."""
     if line in ("#回答内容", "#コメント", "#提出ファイル"):
         return True
-    if re.match(r"#\s*課題解答\d+\.\d+", line):
+    if re.match(ANSWER_MARKER, line):
         return True
     return False
 
