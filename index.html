@@ -82,17 +82,24 @@
         <div class="col-md-9" role="main">
 
 <h1 id="_1">物理シミュレーション</h1>
-<p><strong>（準備中）</strong></p>
 <p>説明スライドはCoursePowerに置きます。</p>
 <h2 id="_2">ノートブック</h2>
 <!-- textlint-disable
 ja-technical-writing/no-unmatched-pair,
 ja-technical-writing/sentence-length,
+ja-technical-writing/max-comma,
 ja-technical-writing/max-kanji-continuous-len
 -->
 
 <ol>
-<li><a href="previews/01_%E9%AB%98%E6%A9%9F%E8%83%BD%E3%81%AA%E9%9B%BB%E5%8D%93.html">高機能な電卓</a> <a download="01_高機能な電卓.ipynb" href="notebooks/01_%E9%AB%98%E6%A9%9F%E8%83%BD%E3%81%AA%E9%9B%BB%E5%8D%93.ipynb"><img alt="Download ipynb" src="https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter" /></a> <a href="https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/01_%E9%AB%98%E6%A9%9F%E8%83%BD%E3%81%AA%E9%9B%BB%E5%8D%93.ipynb"><img alt="Launch Binder" src="https://mybinder.org/badge_logo.svg" /></a> <a href="https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/01_%E9%AB%98%E6%A9%9F%E8%83%BD%E3%81%AA%E9%9B%BB%E5%8D%93.ipynb?hl=ja"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></li>
+<li><a href="previews/01_%E9%AB%98%E6%A9%9F%E8%83%BD%E3%81%AA%E9%9B%BB%E5%8D%93.html">高機能な電卓</a> <a download="01_高機能な電卓.ipynb" href="notebooks/01_%E9%AB%98%E6%A9%9F%E8%83%BD%E3%81%AA%E9%9B%BB%E5%8D%93.ipynb"><img alt="Download ipynb" src="https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter" /></a> <a href="https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/01_%E9%AB%98%E6%A9%9F%E8%83%BD%E3%81%AA%E9%9B%BB%E5%8D%93.ipynb"><img alt="Launch Binder" src="https://mybinder.org/badge_logo.svg" /></a> <a href="https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/01_%E9%AB%98%E6%A9%9F%E8%83%BD%E3%81%AA%E9%9B%BB%E5%8D%93.ipynb?hl=ja"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a><ul>
+<li>基本的な算術演算（<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>//</code>, <code>%</code>, <code>**</code>）</li>
+<li>変数</li>
+<li>データ型（<code>int</code>, <code>float</code>, <code>str</code>）</li>
+<li>ユーザー入力と出力（<code>input</code>, <code>print</code>）</li>
+<li>数学関数（<code>import math</code>）</li>
+</ul>
+</li>
 <li>条件分岐</li>
 <li>反復処理</li>
 <li>関数</li>
@@ -137,13 +144,11 @@ ja-technical-writing/ja-no-weak-phrase,
 jtf-style/4.1.1.句点(。)
 -->
 
-<p>言うまでもありませんが、半年間の講義だけでPythonをマスターすることは不可能です。
-たとえばこの講義では次の事柄がカバーされていません。
-必要となったときに学習する必要があります。</p>
+<p>この講義では扱わないものの、よく使われるPythonの機能として次のものが挙げられます。これらについては、必要となったときに学習するとよいでしょう。</p>
 <ul>
 <li>クラスの定義</li>
 <li>ファイルの入出力</li>
-<li>辞書型</li>
+<li>辞書型などのデータ構造</li>
 <li>例外および例外処理</li>
 </ul>
 <p>さらに、次のことも知っておくと有益かもしれません。</p>
@@ -172,10 +177,10 @@ ja-technical-writing/max-kanji-continuous-len
 <li><a href="https://wagtail.cds.tohoku.ac.jp/coda/python/index.html">Pythonで学ぶコンピュテーショナル・シンキングとデータ科学</a>（早川美徳氏）：
   ボリュームのある講義録。データ科学寄り。</li>
 <li><a href="https://amorphous.tf.chiba-u.jp/lecture.files/chem_computer/index.html">コンピュータ処理</a>（大窪貴洋氏）：
-  化学屋さん向け（たぶん）のPythonの講義録。</li>
+  化学屋さん寄り（たぶん）のPythonの講義録。</li>
 <li><a href="https://utokyo-ipp.github.io/index.html">Pythonプログラミング入門</a>（東京大学数理・情報教育研究センター）：
   Pythonの詳細な講義録。</li>
-<li><a href="https://hdl.handle.net/2433/245698">プログラミング演習 Python 2019</a>（喜多一氏）：
+<li><a href="https://hdl.handle.net/2433/265459">プログラミング演習 Python 2021</a>（喜多一氏、森村吉貴氏、岡本雅子氏）：
   PDFファイルとして公開されている講義録。</li>
 <li><a href="https://chokkan.github.io/mlnote/">機械学習帳</a>（岡崎直観氏）：
   Pythonによる機械学習の講義資料。</li>
@@ -264,5 +269,5 @@ ja-technical-writing/max-kanji-continuous-len
 
 <!--
 MkDocs version : 1.2.3
-Build Date UTC : 2022-03-28 07:56:11.384836+00:00
+Build Date UTC : 2022-04-08 06:10:29.271052+00:00
 -->
