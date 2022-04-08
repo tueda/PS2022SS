@@ -89,7 +89,7 @@ ja-technical-writing/ja-no-weak-phrase,
 ja-technical-writing/max-ten
 -->
 
-You bad text...
+Your bad text...
 
 <!-- textlint-enable -->
 ```
