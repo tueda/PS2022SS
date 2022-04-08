@@ -75,3 +75,21 @@ When forgotten how to push a branch to another branch in a remote repository (e.
 see [here](https://stackoverflow.com/a/13897766).
 
 <!-- textlint-enable -->
+
+
+## textlint
+
+Textlint rules can be be ignored by, for example,
+
+```markdown
+<!-- textlint-disable
+ja-engineering-paper/prh,
+ja-technical-writing/ja-no-mixed-period,
+ja-technical-writing/ja-no-weak-phrase,
+ja-technical-writing/max-ten
+-->
+
+You bad text...
+
+<!-- textlint-enable -->
+```
