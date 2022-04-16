@@ -23,7 +23,11 @@ ja-technical-writing/max-kanji-continuous-len
     - データ型（`int`, `float`, `str`）
     - ユーザー入力と出力（`input`, `print`）
     - 数学関数（`import math`）
-1. 条件分岐
+1. [条件分岐](previews/02_条件分岐.html) [![Download ipynb](https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter)](notebooks/02_%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B2%90.ipynb){: download=02_条件分岐.ipynb} [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/02_%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B2%90.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/02_%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B2%90.ipynb?hl=ja)
+    - `if`文
+    - 比較演算
+    - ブール演算
+    - じゃんけんゲーム
 1. 反復処理
 1. 関数
 1. グラフの描画
