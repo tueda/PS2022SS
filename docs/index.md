@@ -28,7 +28,11 @@ ja-technical-writing/max-kanji-continuous-len
     - 比較演算
     - ブール演算
     - じゃんけんゲーム
-1. 反復処理
+1. [反復処理](previews/03_反復処理.html) [![Download ipynb](https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter)](notebooks/03_%E5%8F%8D%E5%BE%A9%E5%87%A6%E7%90%86.ipynb){: download=03_反復処理.ipynb} [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/03_%E5%8F%8D%E5%BE%A9%E5%87%A6%E7%90%86.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/03_%E5%8F%8D%E5%BE%A9%E5%87%A6%E7%90%86.ipynb?hl=ja)
+    - `while`文と`for`文
+    - 数当てゲーム
+    - リストと`range`オブジェクト
+    - 覆面算
 1. 関数
 1. グラフの描画
 1. 文字列処理
