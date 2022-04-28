@@ -33,6 +33,7 @@ ja-technical-writing/max-kanji-continuous-len
     - 数当てゲーム
     - リストと`range`オブジェクト
     - 覆面算
+    - 【発展】円周率の級数表示
 1. 関数
 1. グラフの描画
 1. 文字列処理
