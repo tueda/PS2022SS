@@ -34,7 +34,12 @@ ja-technical-writing/max-kanji-continuous-len
     - リストと`range`オブジェクト
     - 覆面算
     - 【発展】円周率の級数表示
-1. 関数
+1. [関数](previews/04_関数.html) [![Download ipynb](https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter)](notebooks/04_%E9%96%A2%E6%95%B0.ipynb){: download=04_関数.ipynb} [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/04_%E9%96%A2%E6%95%B0.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/04_%E9%96%A2%E6%95%B0.ipynb?hl=ja)
+    - 関数定義（`def`）
+    - 変数のスコープ
+    - 再帰呼び出し
+    - ブラックジャック
+    - 【発展】迷路探索
 1. グラフの描画
 1. 文字列処理
 1. 乱数
