@@ -53,7 +53,11 @@ ja-technical-writing/max-kanji-continuous-len
     - 1次元ぷよぷよ
     - シーザー暗号
     - 【発展】タイポグリセミア
-1. 乱数
+1. [乱数](previews/07_乱数.html) [![Download ipynb](https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter)](notebooks/07_%E4%B9%B1%E6%95%B0.ipynb){: download=07_乱数.ipynb} [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/07_%E4%B9%B1%E6%95%B0.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/07_%E4%B9%B1%E6%95%B0.ipynb?hl=ja)
+    - リスト内包表記
+    - 一様乱数と正規乱数
+    - 中心極限定理
+    - 【付録】確率変数の期待値と分散
 1. モンテカルロ法
 1. ランダムウォーク
 1. フラクタル
