@@ -58,7 +58,12 @@ ja-technical-writing/max-kanji-continuous-len
     - 一様乱数と正規乱数
     - 中心極限定理
     - 【付録】確率変数の期待値と分散
-1. モンテカルロ法
+1. [モンテカルロ法](previews/08_モンテカルロ法.html) [![Download ipynb](https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter)](notebooks/08_%E3%83%A2%E3%83%B3%E3%83%86%E3%82%AB%E3%83%AB%E3%83%AD%E6%B3%95.ipynb){: download=08_モンテカルロ法.ipynb} [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/08_%E3%83%A2%E3%83%B3%E3%83%86%E3%82%AB%E3%83%AB%E3%83%AD%E6%B3%95.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/08_%E3%83%A2%E3%83%B3%E3%83%86%E3%82%AB%E3%83%AB%E3%83%AD%E6%B3%95.ipynb?hl=ja)
+    - コイン投げ
+    - 円周率
+    - 球の体積
+    - 4次元超球の超体積
+    - 【発展】ファインマン・ポイント
 1. ランダムウォーク
 1. フラクタル
 1. セルオートマトン
