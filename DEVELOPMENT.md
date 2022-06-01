@@ -2,6 +2,11 @@
 
 This is a test page. Never mind.
 
+| branch | status |
+| ------ | ------ |
+| [`develop`](https://github.com/tueda/PS2022SS/tree/develop) | [![Lint](https://github.com/tueda/PS2022SS/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/tueda/PS2022SS/actions/workflows/lint.yml?query=branch%3Adevelop) |
+| [`release`](https://github.com/tueda/PS2022SS/tree/release) | [![Lint](https://github.com/tueda/PS2022SS/actions/workflows/lint.yml/badge.svg?branch=release)](https://github.com/tueda/PS2022SS/actions/workflows/lint.yml?query=branch%3Arelease) |
+
 <!-- textlint-disable
 ja-technical-writing/no-mix-dearu-desumasu
 -->
