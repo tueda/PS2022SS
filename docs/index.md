@@ -64,7 +64,11 @@ ja-technical-writing/max-kanji-continuous-len
     - 球の体積
     - 4次元超球の超体積
     - 【発展】ファインマン・ポイント
-1. ランダムウォーク
+1. [ランダムウォーク](previews/09_ランダムウォーク.html) [![Download ipynb](https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter)](notebooks/09_%E3%83%A9%E3%83%B3%E3%83%80%E3%83%A0%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AF.ipynb){: download=09_ランダムウォーク.ipynb} [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/09_%E3%83%A9%E3%83%B3%E3%83%80%E3%83%A0%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AF.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/09_%E3%83%A9%E3%83%B3%E3%83%80%E3%83%A0%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AF.ipynb?hl=ja)
+    - 1次元ランダムウォーク
+    - 2次元ランダムウォーク
+    - 集合型（`set`）
+    - 自己回避ランダムウォーク
 1. フラクタル
 1. セルオートマトン
 1. 方程式の解
