@@ -15015,7 +15015,7 @@ $$<!-- textlint-enable -->
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <!-- textlint-disable ja-technical-writing/max-ten,jtf-style/4.3.1.丸かっこ（） -->
 
-<p>という関係が近似的に成り立つであろう。右辺については、たとえば、実際に正方形と四分円を紙に描き、それを壁に貼って何回もダーツをランダムに当てたりすれば実験的に測定できる<a name="cite_ref-7"></a><a href="#cite_note-7"><sup>[7]</sup></a>。今回はこれをモンテカルロ・シミュレーションで行う。四分円の面積は$\pi/4$で、正方形の面積は$1$なので、式(1)の右辺の実験値に$4$を掛けると円周率$\pi$が求まる。</p>
+<p>という関係が近似的に成り立つであろう。右辺については、たとえば、実際に正方形と四分円を紙に描き、それを壁に貼って何回もダーツをランダムに当てたりすれば実験的に測定できる<a name="cite_ref-7"></a><a href="#cite_note-7"><sup>[7]</sup></a>。今回はこれをモンテカルロ・シミュレーションで行う。四分円の面積は$\pi/4$で、正方形の面積は$1$なので、式<!-- eqref -->(1)の右辺の実験値に$4$を掛けると円周率$\pi$が求まる。</p>
 <!-- textlint-enable -->
 </div>
 </div>
@@ -15060,7 +15060,7 @@ $$<!-- textlint-enable -->
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>のようにして判断できる<a name="cite_ref-8"></a><a href="#cite_note-8"><sup>[8]</sup></a>。この試行を繰り返し、点が円の内部に入った回数を数えておけば、式 (1) の右辺が数値実験によって求まる。</p>
+<p>のようにして判断できる<a name="cite_ref-8"></a><a href="#cite_note-8"><sup>[8]</sup></a>。この試行を繰り返し、点が円の内部に入った回数を数えておけば、式<!-- eqref -->(1)の右辺が数値実験によって求まる。</p>
 
 </div>
 </div>
@@ -15585,7 +15585,7 @@ $$
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <!-- textlint-disable ja-engineering-paper/prh,jtf-style/4.3.1.丸かっこ（） -->
 
-<p>この6個の9の並びを（真偽は別として）<a href="https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%81%E3%83%A3%E3%83%BC%E3%83%89%E3%83%BBP%E3%83%BB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%B3%E3%83%9E%E3%83%B3">リチャード・ファインマン</a>の逸話から<a href="https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%B3%E3%83%9E%E3%83%B3%E3%83%BB%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88">ファインマン・ポイント</a>（Feynman point）と呼ぶことがある。円周率は10進小数表示において正規数（無限小数表示において数字がランダムに現れる実数）だと信じられている。もしそれが正しいとして、このような早い桁に6個の同じ数字の並びが現れる確率はどのくらいだろうか。つまり、<strong>0から9の数字を等確率で767個並べたとき、6個以上の同じ数字の並びが現れる確率</strong>をモンテカルロ法で概算してみよう。数字の並びは<code>999999</code>とは限らず、<code>000000</code>や<code>888888</code>でもよく、<code>0</code>から<code>9</code>のいずれかの連続した並びとする。サンプルサイズは<code>10 ** 5</code>ほどでよい（実行に30秒もかからないはずである）。結果とともに誤差の見積もりを表示せよ。その際、相対誤差は式(3)で評価するものとする。</p>
+<p>この6個の9の並びを（真偽は別として）<a href="https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%81%E3%83%A3%E3%83%BC%E3%83%89%E3%83%BBP%E3%83%BB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%B3%E3%83%9E%E3%83%B3">リチャード・ファインマン</a>の逸話から<a href="https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%B3%E3%83%9E%E3%83%B3%E3%83%BB%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88">ファインマン・ポイント</a>（Feynman point）と呼ぶことがある。円周率は10進小数表示において正規数（無限小数表示において数字がランダムに現れる実数）だと信じられている。もしそれが正しいとして、このような早い桁に6個の同じ数字の並びが現れる確率はどのくらいだろうか。つまり、<strong>0から9の数字を等確率で767個並べたとき、6個以上の同じ数字の並びが現れる確率</strong>をモンテカルロ法で概算してみよう。数字の並びは<code>999999</code>とは限らず、<code>000000</code>や<code>888888</code>でもよく、<code>0</code>から<code>9</code>のいずれかの連続した並びとする。サンプルサイズは<code>10 ** 5</code>ほどでよい（実行に30秒もかからないはずである）。結果とともに誤差の見積もりを表示せよ。その際、相対誤差は式<!-- eqref -->(3)で評価するものとする。</p>
 <!-- textlint-enable -->
 </div>
 </div>
