@@ -74,7 +74,10 @@ ja-technical-writing/max-kanji-continuous-len
     - シェルピンスキーのギャスケット
     - バーンズリーのシダ
     - アポロニウスの窓
-1. セルオートマトン
+1. [セルオートマトン](previews/11_セルオートマトン.html) [![Download ipynb](https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter)](notebooks/11_%E3%82%BB%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%83%88%E3%83%B3.ipynb){: download=11_セルオートマトン.ipynb} [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/11_%E3%82%BB%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%83%88%E3%83%B3.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/11_%E3%82%BB%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%83%88%E3%83%B3.ipynb?hl=ja)
+    - 基本セルオートマトン
+    - ウルフラムの分類
+    - グライダー
 1. 方程式の解
 1. 運動のシミュレーション
 1. まとめ演習
