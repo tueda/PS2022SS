@@ -4,3 +4,9 @@ rules:
     pattern: 例えば
   - expected: シミュレーション
     pattern: シュミレーション
+  - expected: 周期的境界条件
+    pattern: 周期境界条件
+  - expected: 特殊相対性理論
+    pattern: 特殊相対論
+  - expected: 一般相対性理論
+    pattern: 一般相対論
