@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>01_高機能な電卓</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>11A_ライフゲーム</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14579,7 +14579,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="%E9%AB%98%E6%A9%9F%E8%83%BD%E3%81%AA%E9%9B%BB%E5%8D%93">&#39640;&#27231;&#33021;&#12394;&#38651;&#21331;<a class="anchor-link" href="#%E9%AB%98%E6%A9%9F%E8%83%BD%E3%81%AA%E9%9B%BB%E5%8D%93">&#182;</a></h1>
+<h1 id="%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B2%E3%83%BC%E3%83%A0">&#12521;&#12452;&#12501;&#12466;&#12540;&#12512;<a class="anchor-link" href="#%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B2%E3%83%BC%E3%83%A0">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -14590,7 +14590,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Jupyter Notebookを少し気の利く「高機能な電卓」として使ってみよう<a name="cite_ref-1"></a><a href="#cite_note-1"><sup>[1]</sup></a><a name="cite_ref-2"></a><a href="#cite_note-2"><sup>[2]</sup></a>。</p>
+<p>ここでは、代表的な2次元セルオートマトンである<a href="https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B2%E3%83%BC%E3%83%A0">ライフゲーム</a>（Conway's Game of Life）の、Pythonでの実装の1つを与える。</p>
 
 </div>
 </div>
@@ -14602,69 +14602,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>よく使うJupyter Notebookのセルの種類には2つある。コード（Code）とテキスト（Markdown）である。プログラムを書いて実行できるのはコードセルである。コードセルを好きなだけ挿入したり、逆に削除したりしてみよう。また、以下にあるコードセルの式を変えて実行したりして遊んでみよう。理解を深めるためにも自分でいろいろと試してみることが大切である。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>注意：Pythonのプログラムで使う数字や記号は基本的に半角で入力する。特に、全角スペースを文法的に許されない場所に入れると（半角スペースと見分けがつかないので）分かりにくいエラーとなる。</strong></p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E4%BB%8A%E5%9B%9E%E3%81%AE%E3%81%AD%E3%82%89%E3%81%84">&#20170;&#22238;&#12398;&#12397;&#12425;&#12356;<a class="anchor-link" href="#%E4%BB%8A%E5%9B%9E%E3%81%AE%E3%81%AD%E3%82%89%E3%81%84">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Jupyter Notebook（あるいはGoogle Colaboratoryなど、同等の機能を持ったプログラミング環境）の操作に慣れる。</li>
-<li>Pythonで順次実行による簡単な計算（電卓の代わり）ができるようになる。</li>
-<li>変数とデータ型について理解する。</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E7%AE%97%E8%A1%93%E6%BC%94%E7%AE%97">&#22522;&#26412;&#30340;&#12394;&#31639;&#34899;&#28436;&#31639;<a class="anchor-link" href="#%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E7%AE%97%E8%A1%93%E6%BC%94%E7%AE%97">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>まずは、足し算（<code>+</code>）、引き算（<code>-</code>）、掛け算（<code>*</code>）、割り算（<code>/</code>）、および冪乗（<code>**</code>）を使ってみよう<a name="cite_ref-3"></a><a href="#cite_note-3"><sup>[3]</sup></a><a name="cite_ref-4"></a><a href="#cite_note-4"><sup>[4]</sup></a><a name="cite_ref-5"></a><a href="#cite_note-5"><sup>[5]</sup></a>。数字としては、通常の整数、小数（<code>6.02e23</code>、<code>6.63e-34</code>のようなE表記<a name="cite_ref-6"></a><a href="#cite_note-6"><sup>[6]</sup></a>も可能）などが使える。</p>
+<p>高速化のため<a href="https://numba.pydata.org/">Numba</a>を用いる<a name="cite_ref-1"></a><a href="#cite_note-1"><sup>[1]</sup></a>。Google ColaboratoryやAnacondaを使っている場合はすでにインストール済みのはずである。Binderの場合は、次のセルを実行してNumbaをインストールする必要がある。</p>
 
 </div>
 </div>
@@ -14677,87 +14615,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">100</span> <span class="o">+</span> <span class="mi">5</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span> <span class="o">-</span> <span class="mf">0.1</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">9</span> <span class="o">*</span> <span class="mi">2</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span> <span class="o">/</span> <span class="mi">3</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">2</span><span class="o">**</span><span class="mi">3</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mf">1.234e2</span> <span class="o">+</span> <span class="mf">5.6789e-2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> <span class="o">[</span> -n <span class="s2">&quot;</span><span class="nv">$BINDER_SERVICE_HOST</span><span class="s2">&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> pip install numba
 </pre></div>
 
      </div>
@@ -14772,7 +14630,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>整数としての割り算（<code>//</code>）や、余りを求める（<code>%</code>）こともできる。通常の割り算（<code>/</code>）と比べてみよう<a name="cite_ref-7"></a><a href="#cite_note-7"><sup>[7]</sup></a>。</p>
+<p>以下が（周期的境界条件を用いた）ライフゲームの実装である。この中でもっとも重要な関数は<code>evolve</code>であり、全セルの状態を1ステップ進める計算をしている。実際にライフゲームを実行するには<code>game_of_life</code>関数を使う<a name="cite_ref-2"></a><a href="#cite_note-2"><sup>[2]</sup></a>。</p>
 
 </div>
 </div>
@@ -14785,339 +14643,329 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">22</span> <span class="o">/</span> <span class="mi">7</span>
-</pre></div>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">IPython</span> <span class="kn">import</span> <span class="n">display</span>
+<span class="kn">import</span> <span class="nn">numba</span>
+<span class="kn">from</span> <span class="nn">matplotlib.animation</span> <span class="kn">import</span> <span class="n">FuncAnimation</span>
+<span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">functools</span>
+<span class="kn">import</span> <span class="nn">re</span>
 
-     </div>
-</div>
-</div>
-</div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">22</span> <span class="o">//</span> <span class="mi">7</span>
-</pre></div>
+<span class="k">def</span> <span class="nf">empty_cells</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;`(width, height)`のサイズの、すべて0のセルを作成して返す。&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;int8&quot;</span><span class="p">)</span>
 
-     </div>
-</div>
-</div>
-</div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">22</span> <span class="o">%</span> <span class="mi">7</span>
-</pre></div>
+<span class="k">def</span> <span class="nf">randomized_cells</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;`(width, height)`のサイズの、ランダムなセルを作成して返す。&quot;&quot;&quot;</span>
+    <span class="n">cells</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;int8&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">margin</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">cells</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pad</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="p">((</span><span class="n">margin</span><span class="p">,</span> <span class="n">margin</span><span class="p">),</span> <span class="p">(</span><span class="n">margin</span><span class="p">,</span> <span class="n">margin</span><span class="p">)))</span>
+    <span class="k">return</span> <span class="n">cells</span>
 
-     </div>
-</div>
-</div>
-</div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>もちろん、これらの演算の組み合わせを使った計算もできる。数学での規則と同じように、掛け算や割り算は、足し算や引き算よりも先に計算される<a name="cite_ref-8"></a><a href="#cite_note-8"><sup>[8]</sup></a>。計算の順序を変えたいときは丸括弧（<code>(</code>と<code>)</code>）を使う<a name="cite_ref-9"></a><a href="#cite_note-9"><sup>[9]</sup></a>。</p>
+<span class="nd">@functools</span><span class="o">.</span><span class="n">lru_cache</span><span class="p">(</span><span class="n">maxsize</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">read_from_url</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;指定されたURLからテキストデータを読み込む。&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
 
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span>
-</pre></div>
 
-     </div>
-</div>
-</div>
-</div>
+<span class="k">def</span> <span class="nf">ensure_cells_size</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">new_width</span><span class="p">,</span> <span class="n">new_height</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;指定されたサイズ以上の大きさのセルを確保する。&quot;&quot;&quot;</span>
+    <span class="n">new_width</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">new_width</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">new_height</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">new_height</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span>
-</pre></div>
+    <span class="k">if</span> <span class="n">cells</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">empty_cells</span><span class="p">(</span><span class="n">new_width</span><span class="p">,</span> <span class="n">new_height</span><span class="p">)</span>
 
-     </div>
-</div>
-</div>
-</div>
+    <span class="n">old_height</span><span class="p">,</span> <span class="n">old_width</span> <span class="o">=</span> <span class="n">cells</span><span class="o">.</span><span class="n">shape</span>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>冪乗の優先順位は高く、掛け算や割り算よりも先に計算されるので注意すること。</p>
+    <span class="k">if</span> <span class="n">new_width</span> <span class="o">&lt;=</span> <span class="n">old_width</span> <span class="ow">and</span> <span class="n">new_height</span> <span class="o">&lt;=</span> <span class="n">old_height</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">cells</span>
 
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">2</span><span class="o">**</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span>
-</pre></div>
+    <span class="n">new_width</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">new_width</span><span class="p">,</span> <span class="n">old_width</span><span class="p">)</span>
+    <span class="n">new_height</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">new_height</span><span class="p">,</span> <span class="n">old_height</span><span class="p">)</span>
 
-     </div>
-</div>
-</div>
-</div>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">pad</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">new_height</span> <span class="o">-</span> <span class="n">old_height</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">new_width</span> <span class="o">-</span> <span class="n">old_width</span><span class="p">)))</span>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">2</span> <span class="o">**</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
-</pre></div>
 
-     </div>
-</div>
-</div>
-</div>
+<span class="k">def</span> <span class="nf">read_cells_from_plaintext</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;plaintext形式（とLife 1.05形式）のセルを読みこむ。&quot;&quot;&quot;</span>
+    <span class="c1"># 「!」と「#」で始まるコメント行を除去。空行も除去。</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;^\s*[!#]&quot;</span><span class="p">,</span> <span class="n">line</span><span class="p">)]</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span> <span class="k">if</span> <span class="n">line</span><span class="p">]</span>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E7%B7%B4%E7%BF%92%E5%95%8F%E9%A1%8C">&#32244;&#32722;&#21839;&#38988;<a class="anchor-link" href="#%E7%B7%B4%E7%BF%92%E5%95%8F%E9%A1%8C">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>(1) 次の2つのセルの実行結果が異なることを確認せよ。また、2つ目のセルではどのような順番で計算が行われているか説明せよ。</p>
+    <span class="n">width</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">)</span>
+    <span class="n">height</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
 
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">((</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="o">**</span> <span class="mi">4</span>
-</pre></div>
+    <span class="n">width</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">height</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
-     </div>
-</div>
-</div>
-</div>
+    <span class="n">cells</span> <span class="o">=</span> <span class="n">empty_cells</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">3</span><span class="o">**</span><span class="mi">4</span>
-</pre></div>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="s2">&quot;Oo*&quot;</span><span class="p">:</span>
+                <span class="n">cells</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">elif</span> <span class="n">c</span> <span class="ow">in</span> <span class="s2">&quot;. &quot;</span><span class="p">:</span>
+                <span class="k">pass</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;unexpected character: </span><span class="si">{</span><span class="n">line</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-     </div>
-</div>
-</div>
-</div>
+    <span class="k">return</span> <span class="n">cells</span>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E3%83%87%E3%83%BC%E3%82%BF%E5%9E%8B">&#12487;&#12540;&#12479;&#22411;<a class="anchor-link" href="#%E3%83%87%E3%83%BC%E3%82%BF%E5%9E%8B">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 
-<p>プログラミングにおいて、データの取りうる種類のことを「データ型（data type）」（あるいは単に「型」）と呼ぶ<a name="cite_ref-10"></a><a href="#cite_note-10"><sup>[10]</sup></a>。Pythonにもいろいろなデータ型が用意されている。たとえば、Pythonでは整数（<code>int</code>）と小数（<code>float</code>）はデータ型として区別されており、</p>
-<ul>
-<li>整数どうしの計算は結果が整数に、</li>
-<li>小数どうしの計算は結果が小数に、</li>
-<li>整数と小数の混ざった計算は結果が小数に</li>
-</ul>
-<!-- textlint-enable -->
+<span class="k">def</span> <span class="nf">read_cells_from_rle</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;RLE形式のセルを読みこむ。&quot;&quot;&quot;</span>
+    <span class="n">cells</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
 
-<p>なる。ただし、<code>/</code>を使った割り算は（整数<code>/</code>整数であっても）結果が必ず小数になる。</p>
+    <span class="c1"># 「#」で始まるコメントを除去。</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;#.*&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span> <span class="k">if</span> <span class="n">line</span><span class="p">]</span>
 
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
-</pre></div>
+    <span class="c1"># RLEを1つの文字列に戻す。</span>
 
-     </div>
-</div>
-</div>
-</div>
+    <span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mf">1.0</span> <span class="o">+</span> <span class="mf">2.0</span>
-</pre></div>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+        <span class="c1"># ヘッダー「x = m, y = n ...」をチェック。</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;^\s*x\s*=\s*(\d+)\s*,\s*y\s*=\s*(\d+)&quot;</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+            <span class="n">cells</span> <span class="o">=</span> <span class="n">ensure_cells_size</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)),</span> <span class="nb">int</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)))</span>
+            <span class="k">continue</span>
+        <span class="n">string</span> <span class="o">+=</span> <span class="n">line</span>
 
-     </div>
-</div>
-</div>
-</div>
+    <span class="c1"># 終端記号「!」以降と空白を除去。</span>
+    <span class="n">string</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;!.*&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span>
+    <span class="n">string</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;\s+&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mf">2.0</span>
-</pre></div>
+    <span class="c1"># 少なくとも 1 x 1 のセルを確保。</span>
+    <span class="n">cells</span> <span class="o">=</span> <span class="n">ensure_cells_size</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
-     </div>
-</div>
-</div>
-</div>
+    <span class="c1"># RLE中の各アイテムを処理。</span>
+    <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\d+\D|\D&quot;</span><span class="p">,</span> <span class="n">string</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span>
+            <span class="n">h</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">cells</span><span class="o">.</span><span class="n">shape</span>
+            <span class="n">cells</span> <span class="o">=</span> <span class="n">ensure_cells_size</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">n</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span>
+            <span class="n">x</span> <span class="o">+=</span> <span class="n">n</span>
+        <span class="k">elif</span> <span class="n">c</span> <span class="o">==</span> <span class="s2">&quot;o&quot;</span><span class="p">:</span>
+            <span class="n">h</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">cells</span><span class="o">.</span><span class="n">shape</span>
+            <span class="n">cells</span> <span class="o">=</span> <span class="n">ensure_cells_size</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">n</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+                <span class="n">cells</span><span class="p">[</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">x</span> <span class="o">+=</span> <span class="n">n</span>
+        <span class="k">elif</span> <span class="n">c</span> <span class="o">==</span> <span class="s2">&quot;$&quot;</span><span class="p">:</span>
+            <span class="n">_</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">cells</span><span class="o">.</span><span class="n">shape</span>
+            <span class="n">cells</span> <span class="o">=</span> <span class="n">ensure_cells_size</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">y</span> <span class="o">+=</span> <span class="n">n</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;unexpected item: </span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span>
-</pre></div>
+    <span class="k">return</span> <span class="n">cells</span>
 
-     </div>
-</div>
-</div>
-</div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Pythonでは、（コンピューターのメモリーが許す限り）いくらでも大きな整数（integer）を扱うことができる<a name="cite_ref-11"></a><a href="#cite_note-11"><sup>[11]</sup></a><a name="cite_ref-12"></a><a href="#cite_note-12"><sup>[12]</sup></a>。</p>
+<span class="k">def</span> <span class="nf">guess_pattern_format</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;パターンファイルの形式を推測する。&quot;&quot;&quot;</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+    <span class="c1"># 「!」と「#」で始まるコメントを除去。</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;!.*&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;#.*&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span>
 
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">2</span><span class="o">**</span><span class="mi">67</span> <span class="o">-</span> <span class="mi">1</span>
-</pre></div>
+    <span class="c1"># 最初に見つかった文字で推測。</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="s2">&quot;.&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;plaintext&quot;</span>
+        <span class="k">elif</span> <span class="n">c</span> <span class="ow">in</span> <span class="s2">&quot;b$&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;rle&quot;</span>
 
-     </div>
-</div>
-</div>
-</div>
+    <span class="c1"># 推測不能。</span>
+    <span class="k">return</span> <span class="kc">None</span>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">193707721</span> <span class="o">*</span> <span class="mi">761838257287</span>
-</pre></div>
 
-     </div>
-</div>
-</div>
-</div>
+<span class="k">def</span> <span class="nf">load_cells</span><span class="p">(</span>
+    <span class="n">string</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cells</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="kc">None</span>
+<span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;セルを読み込んで返す。&quot;&quot;&quot;</span>
+    <span class="c1"># URLらしき場合はそこからテキストを読み込む。</span>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">999</span><span class="o">**</span><span class="mi">99</span>
+    <span class="k">if</span> <span class="n">string</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;http&quot;</span><span class="p">):</span>
+        <span class="n">url_lowered</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="n">string</span> <span class="o">=</span> <span class="n">read_from_url</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">fmt</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">url_lowered</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;.cells&quot;</span><span class="p">,</span> <span class="s2">&quot;.lif&quot;</span><span class="p">,</span> <span class="s2">&quot;.life&quot;</span><span class="p">)):</span>
+                <span class="n">fmt</span> <span class="o">=</span> <span class="s2">&quot;plaintext&quot;</span>
+            <span class="k">elif</span> <span class="n">url_lowered</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.rle&quot;</span><span class="p">):</span>
+                <span class="n">fmt</span> <span class="o">=</span> <span class="s2">&quot;rle&quot;</span>
+
+    <span class="c1"># セルの読み込み。</span>
+
+    <span class="k">if</span> <span class="n">fmt</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">fmt</span> <span class="o">=</span> <span class="n">guess_pattern_format</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">fmt</span> <span class="o">==</span> <span class="s2">&quot;plaintext&quot;</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">read_cells_from_plaintext</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">fmt</span> <span class="o">==</span> <span class="s2">&quot;rle&quot;</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">read_cells_from_rle</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;please specify fmt&quot;</span><span class="p">)</span>
+
+    <span class="c1"># 結果の幅と高さ。</span>
+    <span class="c1"># 安定パターンが周期的境界条件で死なないようにマージンを設ける。</span>
+    <span class="c1"># +1では足りないパターンファイルがあるので多めに。</span>
+    <span class="n">current_height</span><span class="p">,</span> <span class="n">current_width</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span>
+    <span class="k">if</span> <span class="n">margin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">margin</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">new_width</span> <span class="o">=</span> <span class="n">current_width</span> <span class="o">+</span> <span class="n">margin</span> <span class="o">*</span> <span class="mi">2</span>
+    <span class="k">if</span> <span class="n">width</span><span class="p">:</span>
+        <span class="n">new_width</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">new_width</span><span class="p">,</span> <span class="n">width</span><span class="p">)</span>
+    <span class="n">new_height</span> <span class="o">=</span> <span class="n">current_height</span> <span class="o">+</span> <span class="n">margin</span> <span class="o">*</span> <span class="mi">2</span>
+    <span class="k">if</span> <span class="n">height</span><span class="p">:</span>
+        <span class="n">new_height</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">new_height</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">cells</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># 背景セルなし。</span>
+        <span class="n">cells</span> <span class="o">=</span> <span class="n">empty_cells</span><span class="p">(</span><span class="n">new_width</span><span class="p">,</span> <span class="n">new_height</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># 背景セルあり。</span>
+        <span class="n">cells</span> <span class="o">=</span> <span class="n">ensure_cells_size</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">atleast_2d</span><span class="p">(</span><span class="n">cells</span><span class="p">)</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span> <span class="n">new_width</span><span class="p">,</span> <span class="n">new_height</span><span class="p">)</span>
+
+    <span class="c1"># 位置の決定。</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">new_width</span> <span class="o">-</span> <span class="n">current_width</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="k">if</span> <span class="n">y</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">new_height</span> <span class="o">-</span> <span class="n">current_height</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+
+    <span class="c1"># 貼り付け。</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">current_height</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">current_width</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]:</span>
+                <span class="n">cells</span><span class="p">[(</span><span class="n">i</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span> <span class="o">%</span> <span class="n">new_height</span><span class="p">,</span> <span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span> <span class="o">%</span> <span class="n">new_width</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">cells</span>
+
+
+<span class="nd">@numba</span><span class="o">.</span><span class="n">jit</span><span class="p">(</span><span class="n">nopython</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">evolve</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">new_cells</span><span class="p">,</span> <span class="n">rule</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;`cells`を`rule`を使って1ステップ進めたものを`new_cells`に書き出す。&quot;&quot;&quot;</span>
+    <span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">=</span> <span class="n">cells</span><span class="o">.</span><span class="n">shape</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nrows</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ncols</span><span class="p">):</span>
+            <span class="n">nlives</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">nlives</span> <span class="o">+=</span> <span class="n">cells</span><span class="p">[(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">nrows</span><span class="p">,</span> <span class="p">(</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">ncols</span><span class="p">]</span>
+            <span class="n">nlives</span> <span class="o">+=</span> <span class="n">cells</span><span class="p">[(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">nrows</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+            <span class="n">nlives</span> <span class="o">+=</span> <span class="n">cells</span><span class="p">[(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">nrows</span><span class="p">,</span> <span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">ncols</span><span class="p">]</span>
+            <span class="n">nlives</span> <span class="o">+=</span> <span class="n">cells</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">ncols</span><span class="p">]</span>
+            <span class="n">nlives</span> <span class="o">+=</span> <span class="n">cells</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">ncols</span><span class="p">]</span>
+            <span class="n">nlives</span> <span class="o">+=</span> <span class="n">cells</span><span class="p">[(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">nrows</span><span class="p">,</span> <span class="p">(</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">ncols</span><span class="p">]</span>
+            <span class="n">nlives</span> <span class="o">+=</span> <span class="n">cells</span><span class="p">[(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">nrows</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+            <span class="n">nlives</span> <span class="o">+=</span> <span class="n">cells</span><span class="p">[(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">nrows</span><span class="p">,</span> <span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">ncols</span><span class="p">]</span>
+            <span class="n">new_cells</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">rule</span><span class="p">[</span><span class="n">cells</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">],</span> <span class="n">nlives</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">game_of_life</span><span class="p">(</span>
+    <span class="n">initial_cells</span><span class="o">=</span><span class="n">randomized_cells</span><span class="p">,</span>
+    <span class="n">rule</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+    <span class="n">tmax</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+    <span class="n">cell_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">,</span>
+    <span class="n">dpi</span><span class="o">=</span><span class="mi">72</span><span class="p">,</span>
+    <span class="n">interval</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+<span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;ライフゲームを実行して結果を表示する。</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    initial_cells: array_like or callable, optional</span>
+<span class="sd">        初期状態、あるいは初期状態を生成する関数。</span>
+<span class="sd">    rule: array_like, optional</span>
+<span class="sd">        ルールを与える2 x 9の配列。</span>
+<span class="sd">    width: int, optional</span>
+<span class="sd">        初期状態の幅。initial_cellsを関数として呼び出すときに使われる。</span>
+<span class="sd">    height: int, optional</span>
+<span class="sd">        初期状態の高さ。initial_cellsを関数として呼び出すときに使われる。</span>
+<span class="sd">    tmax: int, optional</span>
+<span class="sd">        最終時刻。</span>
+<span class="sd">    cell_size: int, optional</span>
+<span class="sd">        描画時の各セルの大きさ。</span>
+<span class="sd">    cmap: str or Colormap, optional</span>
+<span class="sd">        描画に使うカラーマップ。</span>
+<span class="sd">    dpi: int, optional</span>
+<span class="sd">        描画時のDPI。</span>
+<span class="sd">    interval: int, optional</span>
+<span class="sd">        アニメーションの各フレーム間のインターバル。</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    None</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">callable</span><span class="p">(</span><span class="n">initial_cells</span><span class="p">):</span>
+        <span class="c1"># 関数であればこれを呼び出して初期状態を決める。</span>
+        <span class="n">initial_cells</span> <span class="o">=</span> <span class="n">initial_cells</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">rule</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># デフォルト: 標準的なB3/S23のルール。</span>
+        <span class="n">rule</span> <span class="o">=</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+    <span class="n">rule</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">atleast_2d</span><span class="p">(</span><span class="n">rule</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;int8&quot;</span><span class="p">)</span>
+
+    <span class="c1"># セルを用意する。</span>
+    <span class="n">cells</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">atleast_2d</span><span class="p">(</span><span class="n">initial_cells</span><span class="p">))</span>
+    <span class="n">new_cells</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty_like</span><span class="p">(</span><span class="n">cells</span><span class="p">)</span>
+
+    <span class="c1"># アニメーションを作成する。</span>
+
+    <span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">=</span> <span class="n">cells</span><span class="o">.</span><span class="n">shape</span>
+
+    <span class="k">if</span> <span class="n">cell_size</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">cell_count</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span><span class="p">)</span>
+        <span class="n">cell_size</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mi">500</span> <span class="o">//</span> <span class="n">cell_count</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span>
+        <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="n">cell_size</span> <span class="o">*</span> <span class="n">ncols</span> <span class="o">/</span> <span class="n">dpi</span><span class="p">,</span> <span class="n">cell_size</span> <span class="o">*</span> <span class="n">nrows</span> <span class="o">/</span> <span class="n">dpi</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span>
+    <span class="p">)</span>
+    <span class="n">matshow</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">matshow</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">animate</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+        <span class="k">nonlocal</span> <span class="n">cells</span><span class="p">,</span> <span class="n">new_cells</span>
+        <span class="k">if</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># 1ステップ進める。</span>
+            <span class="n">evolve</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">new_cells</span><span class="p">,</span> <span class="n">rule</span><span class="p">)</span>
+            <span class="n">cells</span><span class="p">,</span> <span class="n">new_cells</span> <span class="o">=</span> <span class="n">new_cells</span><span class="p">,</span> <span class="n">cells</span>
+        <span class="n">matshow</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="n">cells</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;$t = </span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s2">$&quot;</span><span class="p">,</span>
+            <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span>
+            <span class="n">x</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+            <span class="n">y</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span>
+            <span class="n">horizontalalignment</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
+            <span class="n">verticalalignment</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+            <span class="n">backgroundcolor</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
+        <span class="p">)</span>
+
+    <span class="n">anim</span> <span class="o">=</span> <span class="n">FuncAnimation</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">animate</span><span class="p">,</span> <span class="n">frames</span><span class="o">=</span><span class="n">tmax</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="n">interval</span><span class="p">)</span>
+    <span class="n">html</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">anim</span><span class="o">.</span><span class="n">to_jshtml</span><span class="p">())</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15132,7 +14980,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>一方で、小数は正確には浮動小数点数（floating-point number）と呼ばれ<a name="cite_ref-13"></a><a href="#cite_note-13"><sup>[13]</sup></a>、有効数字16桁弱で<strong>近似的に</strong>表される<a name="cite_ref-14"></a><a href="#cite_note-14"><sup>[14]</sup></a><a name="cite_ref-15"></a><a href="#cite_note-15"><sup>[15]</sup></a>。</p>
+<p>次のセルでは、$200\times 200$のセルを用いて、ランダムな初期状態から$t=1000$までライフゲームを実行し、アニメーションを生成する。実行に1分程度かかり、ノートブックに保存されるデータは10MB超の大きさになるので注意すること。</p>
 
 </div>
 </div>
@@ -15145,23 +14993,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mf">0.3</span> <span class="o">/</span> <span class="mf">3.0</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">game_of_life</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15176,18 +15009,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E5%87%BA%E5%8A%9B%E3%81%AE%E5%88%B6%E5%BE%A1">&#20986;&#21147;&#12398;&#21046;&#24481;<a class="anchor-link" href="#%E5%87%BA%E5%8A%9B%E3%81%AE%E5%88%B6%E5%BE%A1">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>これまでの例のように、コードセルに1つの式だけを入力して実行すると、Jupyter Notebookの機能としてその式を評価した結果がセルの下に表示される。セルに複数の式がある場合は、最後の式の結果だけが表示される。</p>
+<p>次のセルでは、<a href="https://conwaylife.com/wiki/Main_Page">LifeWiki</a>に公開されている<a href="https://conwaylife.com/wiki/Run_Length_Encoded">RLE</a>形式のファイルに保存されたパターンを読み込んで、<a href="https://conwaylife.com/wiki/Glider">グライダー</a>を発生させている。</p>
 
 </div>
 </div>
@@ -15200,9 +15022,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
-<span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span>
-<span class="mi">5</span> <span class="o">+</span> <span class="mi">6</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">cells</span> <span class="o">=</span> <span class="n">load_cells</span><span class="p">(</span>
+    <span class="s2">&quot;https://www.conwaylife.com/patterns/glider.rle&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">50</span>
+<span class="p">)</span>
+<span class="n">game_of_life</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">tmax</span><span class="o">=</span><span class="mi">199</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15217,7 +15041,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>最後の式の結果だけが表示されているものの、セルの内容は、上から下へと順に実行されている。セルの途中で計算結果を出力したい場合は、<code>print</code>関数<a name="cite_ref-16"></a><a href="#cite_note-16"><sup>[16]</sup></a>というものを使って<code>print(出力したい式)</code>のように書けばよい。</p>
+<p>インターネットで気になるRLE形式のパターンファイルを見つけたら、上の例のように走らせてみるとよい。次のセルのパターンは<a href="https://conwaylife.com/wiki/Sir_Robin">ロビン卿</a>（Sir Robin）と呼ばれる。</p>
 
 </div>
 </div>
@@ -15230,9 +15054,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">6</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">cells</span> <span class="o">=</span> <span class="n">load_cells</span><span class="p">(</span><span class="s2">&quot;https://www.conwaylife.com/patterns/sirrobin.rle&quot;</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">game_of_life</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">tmax</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15247,7 +15071,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>上から下へと、実行された順に結果が出力されていることに注意しよう。また、セルの最後の式にセミコロン（<code>;</code>）を付けると、出力が抑制される<a name="cite_ref-17"></a><a href="#cite_note-17"><sup>[17]</sup></a>。</p>
+<p>次のセルのパターンは<a href="https://conwaylife.com/wiki/Gosper_glider_gun">ゴスパーのグライダー銃</a>（Gosper glider gun）と呼ばれる。</p>
 
 </div>
 </div>
@@ -15260,9 +15084,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
-<span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span>
-<span class="mi">5</span> <span class="o">+</span> <span class="mi">6</span><span class="p">;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">cells</span> <span class="o">=</span> <span class="n">load_cells</span><span class="p">(</span><span class="s2">&quot;https://conwaylife.com/patterns/gosperglidergun.rle&quot;</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">game_of_life</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">tmax</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15277,10 +15101,29 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E5%A4%89%E6%95%B0">&#22793;&#25968;<a class="anchor-link" href="#%E5%A4%89%E6%95%B0">&#182;</a></h2>
+<p>次のセルのパターンは<a href="https://conwaylife.com/wiki/Double_X">ダブルX</a>（Double X）と呼ばれる。</p>
+
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">cells</span> <span class="o">=</span> <span class="n">load_cells</span><span class="p">(</span><span class="s2">&quot;https://conwaylife.com/patterns/doublex.rle&quot;</span><span class="p">)</span>
+<span class="n">game_of_life</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">tmax</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15288,12 +15131,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
+<!-- textlint-disable
+ja-engineering-paper/use-si-units
+-->
 
-<p>プログラミングにおいては、計算の結果に名前をつけて記憶しておき、あとで参照したくなることがよくある。Pythonでは</p>
-<div class="highlight"><pre><span></span><span class="n">名前</span> <span class="o">=</span> <span class="n">式</span>
-</pre></div>
-<p>のように書いて、結果に名前をつけることができる。この名前のことを<strong>変数</strong>（variable）と呼び、このような<code>=</code>を使った文<a name="cite_ref-18"></a><a href="#cite_note-18"><sup>[18]</sup></a>のことを代入文（assignment statement）と呼ぶ。代入文では、<strong>右辺を評価した結果が左辺の変数に代入される</strong>。次のセルでは、変数<code>x</code>に整数$42$を代入している<a name="cite_ref-19"></a><a href="#cite_note-19"><sup>[19]</sup></a><a name="cite_ref-20"></a><a href="#cite_note-20"><sup>[20]</sup></a>。</p>
+<p>次のセルでは2022年6月14日に発見された<a href="https://conwaylife.com/wiki/P10_domino_fountain">周期10のドミノ噴水</a>（P10 domino fountain）を発生させている。RLEファイルへのリンクがまだないようなので、RLEファイルの内容をそのまま<code>load_cells</code>関数に渡している。</p>
 <!-- textlint-enable -->
 </div>
 </div>
@@ -15306,7 +15148,18 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">42</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">cells</span> <span class="o">=</span> <span class="n">load_cells</span><span class="p">(</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">x = 34, y = 21, rule = B3/S23</span>
+<span class="sd">16b2o2$13bo6bo$12bo8bo$13b8o3$8b2o14b2o$2b2o4b6o6b6o4b2o$2b3o5b5o4b5o</span>
+<span class="sd">5b3o$b2o2b2o2bo3bobo2bobo3bo2b2o2b2o$o2b2obob3obo2b4o2bob3obob2o2bo$2o</span>
+<span class="sd">bo2bobo2bobo6bobo2bobo2bob2o$3bob2ob2obob8obob2ob2obo$2obo2bo2bobo10bo</span>
+<span class="sd">bo2bo2bob2o$2ob2o2bobobob8obobobo2b2ob2o$8bo3bo8bo3bo$14b6o$15bo2bo$</span>
+<span class="sd">13bo6bo$13b2o4b2o!</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="p">)</span>
+<span class="n">game_of_life</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">tmax</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15321,7 +15174,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>上のセルのように、セルの最後が代入文の場合、その実行結果はノートブックに表示されない。しかし、ちゃんと変数<code>x</code>に値が代入されているはずである。次のセルを実行してその値を参照してみよう。</p>
+<p>もしパターンを手で入力するなら<a href="https://conwaylife.com/wiki/Plaintext">Plaintext形式</a>が便利である。次のセルでは、<a href="https://conwaylife.com/wiki/Thunderbird">サンダーバード</a>と呼ばれるパターンをPlaintext形式でそのまま<code>load_cells</code>関数に渡している。</p>
 
 </div>
 </div>
@@ -15334,7 +15187,18 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">cells</span> <span class="o">=</span> <span class="n">load_cells</span><span class="p">(</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">ooo</span>
+<span class="sd">...</span>
+<span class="sd">.o.</span>
+<span class="sd">.o.</span>
+<span class="sd">.o.</span>
+<span class="sd">&quot;&quot;&quot;</span><span class="p">,</span>
+    <span class="n">margin</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">game_of_life</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">tmax</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15349,7 +15213,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>次のセルでは、変数<code>a</code>、<code>b</code>、<code>c</code>に次々と右辺の計算結果を代入し、最後に変数<code>c</code>の値を<code>print</code>関数によって表示している。上から下へと順に処理が行われることに注意しよう。</p>
+<p>ライフゲームのルールを変化させることもできる。次のセルでは<a href="https://conwaylife.com/wiki/Mazectric">mazectric</a>（B3/S1234）と呼ばれるルールで実行している。</p>
 
 </div>
 </div>
@@ -15362,1069 +15226,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">3</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">4</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>数学では、等式は「左辺と右辺が等しい」、つまり「$x = 42$」は「$x$が$42$に等しい」という意味である。しかし、Pythonの代入文は「右辺を計算した結果を左辺の変数に代入する」という意味である。すでに変数に代入されていた値がある場合、その値は上書きされる。数学の「$=$」とPythonの「<code>=</code>」の意味を混同しないようにしよう<a name="cite_ref-21"></a><a href="#cite_note-21"><sup>[21]</sup></a>。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>変数の名前<a name="cite_ref-22"></a><a href="#cite_note-22"><sup>[22]</sup></a>は、文法上使われている名前以外であれば、かなり自由に付けることができる<a name="cite_ref-23"></a><a href="#cite_note-23"><sup>[23]</sup></a>。通常、半角の英数字とアンダースコア（<code>_</code>）の組み合わせを用いることが多い。大文字と小文字は区別される<a name="cite_ref-24"></a><a href="#cite_note-24"><sup>[24]</sup></a>。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">X</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x1</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">y2</span> <span class="o">=</span> <span class="n">x1</span> <span class="o">+</span> <span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y2</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">some_words_you_like</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">other_words_you_like</span> <span class="o">=</span> <span class="n">some_words_you_like</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">some_words_you_like</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">other_words_you_like</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>何も値が代入されていない変数を参照しようとするとエラーとなる（<code>NameError: name ... is not defined</code>と表示される）。その場合には、スペルミスはないか<a name="cite_ref-25"></a><a href="#cite_note-25"><sup>[25]</sup></a>、大文字と小文字を間違っていないかなどをチェックしたほうがよい。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">some_words_you_lake</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>変数を使って、もう少し実用的なものを計算してみよう。次のセルでは、円周率を3として円の面積を計算している。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pi</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">radius</span> <span class="o">=</span> <span class="mf">2.0</span>
-<span class="n">area</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E7%B7%B4%E7%BF%92%E5%95%8F%E9%A1%8C">&#32244;&#32722;&#21839;&#38988;<a class="anchor-link" href="#%E7%B7%B4%E7%BF%92%E5%95%8F%E9%A1%8C">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>(2) 円周率は3ではない。上のセルで、<code>pi</code>をもう少しよい近似値（<code>3.14</code>）に変更して、再実行してみよう。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>(3) 次のセルを実行する前に、<code>a</code>と<code>b</code>と<code>c</code>の値がどう出力されるかを考えてみよう。セルの中の文は、上から下へと順に実行されることに注意すること。実際に実行してみて、自分の考えが合っていたか確かめてみよう。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E4%B8%AD%E3%81%AE%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88">&#12503;&#12525;&#12464;&#12521;&#12512;&#20013;&#12398;&#12467;&#12513;&#12531;&#12488;<a class="anchor-link" href="#%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E4%B8%AD%E3%81%AE%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>プログラム中にコメント（人間用の注釈）を入れるときは<code>#</code>を使う。<code>#</code>以降はその行が終わるまでPythonに無視される<a name="cite_ref-26"></a><a href="#cite_note-26"><sup>[26]</sup></a>。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 台形の面積を求める。</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mf">3.0</span>  <span class="c1"># 上底</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mf">5.0</span>  <span class="c1"># 下底</span>
-<span class="n">h</span> <span class="o">=</span> <span class="mf">8.0</span>  <span class="c1"># 高さ</span>
-<span class="n">area</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="n">h</span> <span class="o">/</span> <span class="mi">2</span>  <span class="c1"># 面積</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/max-ten -->
-
-<p>一般に、変数に意味の分かりやすい名前を使ったり、適度にコメントを入れたりすると、ほかの人が読んでも理解しやすいプログラムとなる<a name="cite_ref-27"></a><a href="#cite_note-27"><sup>[27]</sup></a>。そしてプログラミングにおいては、「1か月後のあなた」は「プログラムを書いている現在のあなた」とはまったくの他人だと考えたほうがよい。人間は忘れる生き物である。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E7%B7%B4%E7%BF%92%E5%95%8F%E9%A1%8C">&#32244;&#32722;&#21839;&#38988;<a class="anchor-link" href="#%E7%B7%B4%E7%BF%92%E5%95%8F%E9%A1%8C">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>(4) 三角形の3つの辺の長さが$a$、$b$、$c$として与えられたとき、その面積$S$を次に与えられたヘロンの公式によって求めるプログラムを書いてみよう。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-$$
-S = \sqrt{s(s-a)(s-b)(s-c)} ,
-\qquad
-s = \frac{a + b + c}{2}.
-\tag{1}
-$$
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>ただし、平方根は<code>( ... ) ** (1 / 2)</code>のように冪乗を使って求めることができる<a name="cite_ref-28"></a><a href="#cite_note-28"><sup>[28]</sup></a><a name="cite_ref-29"></a><a href="#cite_note-29"><sup>[29]</sup></a>。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">3.0</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mf">4.0</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mf">5.0</span>
-
-<span class="c1"># ヘロンの公式を用いて三角形の面積を計算するように書き換えよう。</span>
-<span class="c1"># 必要なら変数を追加しよう。</span>
-<span class="n">area</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>(5) 上の台形の面積を求めるプログラムを、できるだけ<strong>分かりにくい</strong>変数名を使って書き直してみよう。適切な名前の大切さを実感できるだろうか<a name="cite_ref-30"></a><a href="#cite_note-30"><sup>[30]</sup></a>。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E6%95%B0%E5%AD%A6%E9%96%A2%E6%95%B0">&#25968;&#23398;&#38306;&#25968;<a class="anchor-link" href="#%E6%95%B0%E5%AD%A6%E9%96%A2%E6%95%B0">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>通常、関数電卓では様々な数学関数が利用できる。ここでは、Pythonでの数学関数の利用について簡単に触れておこう。そのためには<code>math</code>モジュールというものをプログラムに読み込ませる必要がある。Pythonにおいてモジュール（module）とは、様々な機能を分類するための単位である<a name="cite_ref-31"></a><a href="#cite_note-31"><sup>[31]</sup></a>。<a href="https://docs.python.org/ja/3/library/math.html"><code>math</code>モジュール</a>には数学関数（三角関数や指数関数など）や数学定数（円周率など）が分類され、簡単に利用できるようになっている。これを読み込ませるには次のセルのように<code>import</code>文を使う<a name="cite_ref-32"></a><a href="#cite_note-32"><sup>[32]</sup></a>。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>import</code>文によって<code>math</code>モジュールが読み込まれたら、<code>math.関数名(...)</code>のようにして数学関数を使うことができる（三角関数はラジアン単位である）。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>ただし、絶対値を求める関数（<code>abs</code>）は、数学を扱わないプログラムでもよく使われるため<code>math</code>モジュールに分類されておらず、<code>math</code>モジュールを読み込まなくてもそのまま使える。<code>abs</code>関数に整数を与えると結果は整数に、浮動小数点数を与えると結果も浮動小数点数になる。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">abs</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E6%96%87%E5%AD%97%E5%88%97">&#25991;&#23383;&#21015;<a class="anchor-link" href="#%E6%96%87%E5%AD%97%E5%88%97">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable jtf-style/4.3.5.二重引用符 -->
-
-<p>コンピュータープログラムでは数値だけでなく、文章などのテキストデータを処理することも多い。Pythonには文字列（string）<a name="cite_ref-33"></a><a href="#cite_note-33"><sup>[33]</sup></a>を扱うデータ型（<code>str</code>）がある。Pythonプログラム中に文字列データを直接記述するときは（半角の）ダブルクォート（"）かシングルクォート（'）で囲って表す（文字列リテラル<a name="cite_ref-34"></a><a href="#cite_note-34"><sup>[34]</sup></a>と呼ぶ）。次のセルには、ダブルクォートを使った文字列リテラルとして表した「こんにちは」という文字列データが入力されている。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="s2">&quot;こんにちは&quot;</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>もちろん、文字列も変数に代入できる。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;こんにちは&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>文字列どうしは<code>+</code>によって連結（concatenation）できる。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;あいうえお&quot;</span>
-<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;かきくけこ&quot;</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>文字列と数値は連結できない。次のセルを実行するとエラー（<code>TypeError</code>）が起こる。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;123&quot;</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">456</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E3%83%87%E3%83%BC%E3%82%BF%E5%9E%8B%E3%81%AE%E5%A4%89%E6%8F%9B">&#12487;&#12540;&#12479;&#22411;&#12398;&#22793;&#25563;<a class="anchor-link" href="#%E3%83%87%E3%83%BC%E3%82%BF%E5%9E%8B%E3%81%AE%E5%A4%89%E6%8F%9B">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>これまでに<code>int</code>（整数）、<code>float</code>（浮動小数点数）、<code>str</code>（文字列）というデータ型が出てきた。これらのデータ型間で、あるデータ型の値をほかのデータ型の値に変換するには、<code>int(なんらかの式)</code>、<code>float(なんらかの式)</code>、<code>str(なんらかの式)</code>のように書く<a name="cite_ref-35"></a><a href="#cite_note-35"><sup>[35]</sup></a>。それぞれ、整数、浮動小数点、文字列に変換された値を得ることができる。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">22</span> <span class="o">/</span> <span class="mi">7</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># 浮動小数点数から整数に変換、小数点以下は切り捨てられる。</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">42</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>  <span class="c1"># 整数から浮動小数点数に変換。</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">42</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-
-<span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;nの値は&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>  <span class="c1"># 整数から文字列に変換。その後、文字列として連結。</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>文字列を<code>int</code>や<code>float</code>によって数値に変換する際、変換元の文字列がただしく数値を表していない場合はエラー（<code>ValueError</code>）が起こる。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;42.3&quot;</span>
-<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>  <span class="c1"># (浮動小数点数ではあるが)整数を表した文字列ではないのでエラーが起こる。</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;abc&quot;</span>
-<span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>  <span class="c1"># 浮動小数点数を表した文字列ではないのでエラーが起こる。</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>次のセルでは、<code>age</code>と<code>weight</code>を文字列に変換したあと、連結して1つの文として表示している<a name="cite_ref-36"></a><a href="#cite_note-36"><sup>[36]</sup></a><a name="cite_ref-37"></a><a href="#cite_note-37"><sup>[37]</sup></a>。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;止田次郎&quot;</span>
-<span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">height</span> <span class="o">=</span> <span class="mi">189</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;さんは&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;歳で身長&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">height</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;センチメートルです。&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>上のセルと同じことをフォーマット済み文字列リテラル（formatted string literal; f-string）というものを使って行うことができる<a name="cite_ref-38"></a><a href="#cite_note-38"><sup>[38]</sup></a>。フォーマット済み文字列リテラルは、文字列リテラルの頭に<code>f</code>を付け、埋め込みたい式を<code>{なんらかの式}</code>のように書いたものである。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;止田次郎&quot;</span>
-<span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">height</span> <span class="o">=</span> <span class="mi">189</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">さんは</span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2">歳で身長</span><span class="si">{</span><span class="n">height</span><span class="si">}</span><span class="s2">センチメートルです。&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
-
-<p>次のセルでは、</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-$$
-\text{BMI} = \frac{\text{体重}}{\text{kg}} \biggm/ \left( \frac{\text{身長}}{\text{m}} \right)^2, \tag{2} 
-$$
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>で定義される<a href="https://www.e-healthnet.mhlw.go.jp/information/dictionary/metabolic/ym-002.html">BMI (Body Mass Index)</a>を計算し、フォーマット済み文字列リテラルを使って表示している。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">height</span> <span class="o">=</span> <span class="mi">189</span>
-<span class="n">weight</span> <span class="o">=</span> <span class="mi">75</span>
-<span class="n">bmi</span> <span class="o">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;身長が</span><span class="si">{</span><span class="n">height</span><span class="si">}</span><span class="s2">センチメートル、体重が</span><span class="si">{</span><span class="n">weight</span><span class="si">}</span><span class="s2">キログラムのとき、BMIは</span><span class="si">{</span><span class="n">bmi</span><span class="si">}</span><span class="s2">です。&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E5%85%A5%E5%8A%9B">&#12518;&#12540;&#12470;&#12540;&#20837;&#21147;<a class="anchor-link" href="#%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E5%85%A5%E5%8A%9B">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>ユーザーからの入力が欲しいときは<code>input</code>関数というものを使う。これは<code>input(なんらかの入力を促すメッセージ文字列)</code>のように書くと、メッセージを表示するとともにユーザー入力を<strong>文字列として</strong>得ることができるものである。実行すると<strong>ユーザー入力待ちの状態になるので、文字列を入力したあとEnterキーで確定する</strong>こと。整数や浮動小数点数が欲しいときはデータ型の変換が必要となる。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;なにか文字列を入力してください&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;あなたが入力したのは「</span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s2">」&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;文字列を入力してね&quot;</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;もう一つ文字列を入力してね&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;整数を選んで&quot;</span><span class="p">))</span>
-<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;もう一つ整数選んで&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E6%BC%94%E7%BF%92%E8%AA%B2%E9%A1%8C">&#28436;&#32722;&#35506;&#38988;<a class="anchor-link" href="#%E6%BC%94%E7%BF%92%E8%AA%B2%E9%A1%8C">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>次のセルのプログラムは、<code>x</code>という変数に<code>input</code>関数を用いて得られた数（<code>float</code>を使って変換している）を代入したあと、その値を<code>print</code>関数で出力するプログラムである。</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;xを入力してください&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
-
-<p>これを参考にして、次のセルに</p>
-<ol>
-<li><code>x</code>を<code>input</code>関数を用いて入力する、</li>
-<li><code>y</code>を<code>input</code>関数を用いて入力する、</li>
-<li><code>x</code>と<code>y</code>の和、差、積、商をそれぞれ順に出力する、</li>
-</ol>
-<p>という動作をするプログラムを作れ。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 課題解答1.1  &lt;-- 提出時に、このコメント行を必ず含めること。</span>
-
-<span class="c1"># このセルに解答（この行は消してよい）</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">cells</span> <span class="o">=</span> <span class="n">randomized_cells</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">75</span><span class="p">)</span>
+<span class="n">game_of_life</span><span class="p">(</span>
+    <span class="n">cells</span><span class="p">,</span> <span class="n">rule</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]],</span> <span class="n">tmax</span><span class="o">=</span><span class="mi">350</span>
+<span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16450,55 +15256,8 @@ $$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable
-ja-engineering-paper/prh,
-ja-technical-writing/ja-no-mixed-period,
-ja-technical-writing/ja-no-weak-phrase,
-ja-technical-writing/sentence-length
--->
-
 <p><a name="cite_note-1"></a>1.&nbsp;<a href="#cite_ref-1">^</a>
-脚注には、</p>
-<ul>
-<li>本筋から離れてしまう事柄、</li>
-<li>知っていて損はないけれど授業で触れる時間はないような話、</li>
-<li>ひょっとしたら誤解してしまうかもしれないことへの補足説明、</li>
-<li>初めは理解しなくてもよい深く突っ込んだトピック、</li>
-<li>C言語などPython以外のプログラミング言語との比較、</li>
-<li>ただの雑談、</li>
-<li>課題のヒント、</li>
-</ul>
-<p>などを書くので、適宜、取捨選択して後で読んだり読まなかったりして欲しい。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable
-ja-engineering-paper/prh,
-ja-technical-writing/ja-no-weak-phrase,
-ja-technical-writing/no-exclamation-question-mark
--->
-
-<p>初回のノートブックの脚注の分量は少し多めに思えるかもしれない。これは初回なのでどうしても雑多な補足説明が多い、初回なので準備・執筆時間が十分に取れた、などの理由による。回が進むにつれて、すぐに減ると思われるので安心して（？）いただきたい。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>なお、Google Colaboratoryだと、脚注へのリンクをクリックしても、リンク先が折りたたまれて隠れている場合はジャンプしてくれないようだ。</p>
+Numbaの高速化がどのくらい効いているか知りたければ、<code>@numba.jit(nopython=True)</code>のデコレーターを除去したうえで<code>evolve</code>関数を定義し、ライフゲームを実行してみればよい。<code>evolve</code>関数の処理の高速化の結果、現在のところ圧倒的に遅いのはシミュレーション自体ではなくアニメーションを作成している部分である。</p>
 
 </div>
 </div>
@@ -16511,761 +15270,8 @@ ja-technical-writing/no-exclamation-question-mark
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><a name="cite_note-2"></a>2.&nbsp;<a href="#cite_ref-2">^</a>
-この講義では、PythonのバージョンとしてPython 3.7以降を想定している。すべての例題プログラムは、現時点での最新バージョンであるPython 3.10でも動く（はずである）。</p>
+このコードの多くの部分（<code>read_from_url</code>関数から<code>load_cells</code>関数まで）はパターンファイルを読み込む処理のためのものであり、ライフゲームをランダムな初期条件から開始するのであれば必要ない。</p>
 
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-3"></a>3.&nbsp;<a href="#cite_ref-3">^</a>
-念のため：足し算、引き算、掛け算、割り算のことをそれぞれ加算、減算、乗算、除算などとも呼ぶ。これらは四則演算と総称される。余りを求めることは剰余算と呼ばれる。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable
-ja-technical-writing/sentence-length
--->
-
-<p>ついでに：（ざっくりと言うと）四則演算できる代数系を数学では<a href="https://en.wikipedia.org/wiki/Field_(mathematics">体（field）</a>)と呼ぶ。例として有理数体、実数体、複素数体などが挙げられる。整数全体の集合$\mathbb{Z}$は（一般に割り算の結果が整数にならないので）体ではないが、たとえばある素数$p$を法とする剰余によって加算・乗算を定義すると体となる（$\mathbb{F}_p \equiv \mathbb{Z}/p\mathbb{Z}$で表す）。桁数が大きい場合は遅くなる$\mathbb{Z}$（あるいはその一般化としてたとえば多項式環$\mathbb{Z}[\vec{x}]$）上での多倍長演算は、<a href="https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E3%81%AE%E5%89%B0%E4%BD%99%E5%AE%9A%E7%90%86">中国の剰余定理</a>により、高速に実行できる$\mathbb{F}_p$上での演算から再構築でき、応用上有益である。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-4"></a>4.&nbsp;<a href="#cite_ref-4">^</a>
-冪乗演算子として<code>^</code>を使うプログラミング言語（VBA、Mathematicaなど）と<code>**</code>を使うプログラミング言語（Fortran、Rubyなど）、そんな演算子は存在しない言語（C、Javaなど）があるが、Pythonでは<code>**</code>を使う。なお、Pythonでは<code>^</code>を違う意味（整数に対するビット単位のXOR、集合に対する対称差など）に使うので注意。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-5"></a>5.&nbsp;<a href="#cite_ref-5">^</a>
-Pythonの文法では、<code>100 + 5</code>のように数字と演算子の間に空白を入れるか、<code>100+5</code>のように入れないかで意味は変わらない。しかしインデント（字下げ）や改行に関しては、Pythonの文法上意味を持つので注意が必要である。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-6"></a>6.&nbsp;<a href="#cite_ref-6">^</a>
-念のため：$6.02\times 10^{23}$のように仮数部と$10$の冪乗の積を用いた数値の表記方法を指数表記（exponential notation）あるいは科学的表記（scientific notation）と呼ぶ。多くのプログラミング言語では、これを<code>6.02e23</code>のように仮数部と指数部の間に<code>e</code>や<code>E</code>などを挟む形で表記する。これをE表記（E notation）と呼ぶ。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-7"></a>7.&nbsp;<a href="#cite_ref-7">^</a>
-$22/7$は古代より知られている円周率の近似値である。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-8"></a>8.&nbsp;<a href="#cite_ref-8">^</a>
-Pythonの演算子の優先順位は<a href="https://docs.python.org/ja/3/reference/expressions.html#operator-precedence">ここ</a>にまとめられている（上にあるものほど優先される）。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable
-ja-engineering-paper/prh,
-ja-technical-writing/ja-no-weak-phrase
--->
-
-<p><a name="cite_note-9"></a>9.&nbsp;<a href="#cite_ref-9">^</a>
-数学における括弧のように、演算順序を変えるため角括弧（<code>[</code>と<code>]</code>）や波括弧（<code>{</code>と<code>}</code>）を使いたくなるかもしれない。しかし、これらはPythonにおいて違う意味を持っている。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!--
-textlint-disable
-ja-technical-writing/sentence-length
--->
-
-<p><a name="cite_note-10"></a>10.&nbsp;<a href="#cite_ref-10">^</a>
-現在のデジタルコンピューターにおいて、あらゆるデータは究極的には0と1の並びで表現されている。たとえば、コンピューターのメモリー上に<code>11110000 10011111 10001101 10011100 11110000 10011111 10011000 10001010</code>というデータがあったとして、このデータを何と解釈すべきか（データ型）をあらかじめ決めておかなければ、解釈のしようがない。ちなみに、このデータはテキストだと解釈すると「🍜😊」、整数であれば$9986908029461569520$、浮動小数点数だと$-1.2812557230242775\times 10^{-257}$となる。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">struct</span>
-<span class="n">data</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;</span><span class="se">\xf0\x9f\x8d\x9c\xf0\x9f\x98\x8a</span><span class="s2">&quot;</span>       <span class="c1"># 上の0と1の並びを16進法で書いた8バイトのデータ</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s2">08b</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span><span class="p">]))</span>      <span class="c1"># 2進法表示</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>                             <span class="c1"># UTF-8文字列だと思ってみる</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">byteorder</span><span class="o">=</span><span class="s2">&quot;little&quot;</span><span class="p">))</span>  <span class="c1"># 符号なし整数だと思ってみる</span>
-<span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s1">&#39;&lt;d&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">))</span>                <span class="c1"># 倍精度浮動小数点だと思ってみる</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/sentence-length -->
-
-<p><a name="cite_note-11"></a>11.&nbsp;<a href="#cite_ref-11">^</a>
-Pythonの整数は「任意精度多倍長整数（arbitrary-precision integer number）」として実装されており、どんなに大きな整数でも（メモリー容量と計算時間の許す限り）扱うことができる。ほかのプログラミング言語では、基本的な整数データ型の取りうる範囲があらかじめ決まっていることが多い。計算の結果がその範囲を超えたときに何が起こるかは言語によって異なる。オーバーフローのエラーが起きたり、間違った答えのままプログラムが進行してしまったりする。さらには、何が起こるかはまったくの未定義でありプログラマーの鼻から悪魔（<a href="https://stackoverflow.com/a/13444785">nasal demons</a>）を飛び出させても仕様に反しない、と冗談を言われてしまうような厄介な言語（CおよびC++言語）もある。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/sentence-length -->
-
-<p><a name="cite_note-12"></a>12.&nbsp;<a href="#cite_ref-12">^</a>
-1903年、フランク・ネルソン・コールはアメリカ数学会の講演において$193707721 \times 761838257287$の計算を黒板で行い、これが$M_{67} \equiv 2^{67} - 1$の因数であることを示した。$M_{67}$が（1644年のマラン・メルセンヌの予想に反して）因数を持つことは1876年エドゥアール・リュカによって証明されていたが、その因数が何かは分かっていなかった。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-13"></a>13.&nbsp;<a href="#cite_ref-13">^</a>
-浮動小数点数は、固定長の仮数部と指数部を持ち、有効数字の桁数を固定して表される（小数点の位置が動く）。これとは対照的に、整数部と小数部の桁数を固定して表す固定小数点数（fixed-point number）というものもある。科学技術計算では主に浮動小数点数が使われる。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable
-ja-engineering-paper/use-si-units,
-ja-technical-writing/sentence-length
--->
-
-<p><a name="cite_note-14"></a>14.&nbsp;<a href="#cite_ref-14">^</a>
-通常、Pythonの<code>float</code>型は、<a href="https://ja.wikipedia.org/wiki/IEEE_754">IEEE 754</a> binary64形式として規定されている64ビット倍精度浮動小数点数（double-precision floating-point number）として実装されている。これは有限桁数を用いた2進法による実数の近似的表現の一種である。$0.1$（10進法）を2進法で書き表すと、$0.0001\ 1001\ 1001\ 1001 \cdots$（2進法）のような循環小数になるので、$1/10$を有限桁数の2進法表記において厳密に表すことは不可能である。よって、Pythonで<code>0.1</code>と入力すると、binary64で表現できる実数のうちもっとも近い値（無理やり10進法で書くと$0.1000000000000000055511151231257827021181583404541015625$）と解釈される。逆に、Pythonでこの値を出力するときは単に<code>0.1</code>と表示される。さて、<code>0.1 + 0.1 + 0.1</code>を評価すると結果として$0.3000000000000000444089209850062616169452667236328125$が得られるが、これは$3/10$にもっとも近い$0.299999999999999988897769753748434595763683319091796875$とは異なる値である（この場合、その相対誤差は$2\times 10^{-16}$程度）。そこでPythonは<code>0.1 + 0.1 + 0.1</code>を<code>0.3</code>ではなく<code>0.30000000000000004</code>と表示するのである。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/sentence-length -->
-
-<p><a name="cite_note-15"></a>15.&nbsp;<a href="#cite_ref-15">^</a>
-Pythonの浮動小数点は「倍精度浮動小数点数（double-precision floating-point number）」であり、64ビットのデータ長を持つ。ほかのプログラミング言語では、32ビットの単精度浮動小数点数（single-precision floating-point number）や、128ビットの四倍精度浮動小数点数（quadruple-precision floating-point number）が用意されていることもある。より高精度の演算結果が必要とされる場合、任意精度浮動小数点数（arbitrary-precision floating-point number）が使用される（通常はソフトウェア・ライブラリとして実装される）。逆に、機械学習などの高速化を目的として16ビットの半精度浮動小数点数（half-precision floating point number）が使用されることもある。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable
-ja-engineering-paper/prh,
-ja-technical-writing/ja-no-weak-phrase
--->
-
-<p><a name="cite_note-16"></a>16.&nbsp;<a href="#cite_ref-16">^</a>
-関数については後の回で扱うが、プログラミングにおける「関数」を簡単に言うと、数学でいう関数を一般化したようなものである。入力（引数（ひきすう）と呼ばれる）を与えると、何かしらの処理を行った後に、何らかの出力（返り値もしくは戻り値などと呼ばれる）を返す。ただし、入力は0個の場合もあるし、出力がない場合もある。明示された入出力以外に、内部的な状態を持ったり外部と相互作用する場合もある。まったく何も処理をしない関数を定義することもある。実際、<code>print</code>関数は引数として与えられた値を画面に表示したあと、何も値を返さない。このような何も返さない関数は、<code>None</code>という「何も値が存在しない状態」を表す定数を返しているとも解釈できる。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>関数の呼び出しは<code>関数の名前(コンマで区切られた引数リスト)</code>のようになる。引数がない場合も<code>()</code>は必要である。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-17"></a>17.&nbsp;<a href="#cite_ref-17">^</a>
-セミコロン（<code>;</code>）は1行に複数の文を書きたいときにも使う。</p>
-<div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">3</span>
-</pre></div>
-<p>逆に、1つの文を複数行を使って書きたい場合は、バックスラッシュ（<code>\</code>：日本語Windowsでは半角円記号として表示されることが多い）を改行の直前に書くことで継続行を表す。</p>
-<div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> \
-    <span class="mi">2</span> <span class="o">+</span> \
-    <span class="mi">3</span>
-</pre></div>
-<p>閉じているはずの括弧が閉じていないなど、文法的に行が継続することの明らかな場合には、<code>\</code>がなくとも継続行であるとみなされる。</p>
-<div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span>
-     <span class="mi">2</span> <span class="o">+</span>
-     <span class="mi">3</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-18"></a>18.&nbsp;<a href="#cite_ref-18">^</a>
-多くのプログラミング言語の文法では、文（statement）と式（expression）を区別している。文とは、コンピューターへの何らかの処理命令である。式とは、数式のようにそれ自体が評価できて値を持つものである。Pythonでは、式文（expression statement）と言って、式自体が文として成立する。ここで出てきたPythonの<code>=</code>を使った代入文は文であるが（式ではない）、Python 3.8では代入式（いわゆるセイウチ演算子<code>:=</code>、セイウチに見えるから）が導入された。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/sentence-length -->
-
-<p><a name="cite_note-19"></a>19.&nbsp;<a href="#cite_ref-19">^</a>
-もう少し正確に言うと、<code>x = 42</code>を実行すると、<code>42</code>という値を持った<code>int</code>型のオブジェクト（object）が用意され、そのオブジェクトに（現在のスコープでのローカルな）<code>x</code>という名前が付けられている（名前の束縛；name binding）。オブジェクトに必要なメモリー領域は自動的に確保され、必要なくなったら自動的に解放される。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-20"></a>20.&nbsp;<a href="#cite_ref-20">^</a>
-プログラミングの例題で$42$という整数が唐突に出てきたら、おそらく<a href="https://www.google.com/search?q=the+answer+to+life+the+universe+and+everything">これ</a>が理由である。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-21"></a>21.&nbsp;<a href="#cite_ref-21">^</a>
-<code>x = x + 1</code>や<code>y = y * 5</code>のように、変数に何らかの二項演算をしたあと、その結果を元の変数に再代入することがある。Pythonではこれらを<code>x += 1</code>や<code>y *= 5</code>のような累算代入文（augmented assignment statement）で書くことも多い。（通常は）これらは等価である。C言語等では複合代入演算子（compound assignment operator）と呼ばれる機能である。なお、PythonにはC言語等で用意されている<code>++</code>や<code>--</code>に直接相当するものはない。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable
-ja-engineering-paper/prh,
-ja-technical-writing/ja-no-mixed-period,
-ja-technical-writing/ja-no-weak-phrase,
-ja-technical-writing/max-ten
--->
-
-<p><a name="cite_note-22"></a>22.&nbsp;<a href="#cite_ref-22">^</a>
-識別子（identifier）と呼ばれる、変数のほかに関数やモジュールなどにもつける名前である。識別子として文法上どんなものが許されるかは<a href="https://docs.python.org/ja/3/reference/lexical_analysis.html#identifiers">ここ</a>に書いてある（が、見てもよくわからないと思う）。ざっくりと言うと：</p>
-<ul>
-<li>半角の英数字とアンダースコア（<code>_</code>）の組み合わせは大丈夫。</li>
-<li>ただし、最初の文字が数字であってはならない。</li>
-<li>最初の文字がアンダースコアの場合は、慣習として特別な意味を持つことが多い。</li>
-</ul>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable
-ja-technical-writing/sentence-length
--->
-
-<p>Jupyterでは<code>In</code>という変数に実行履歴、<code>Out</code>という変数に実行結果が格納されているが、<code>_</code>（前回の結果）, <code>__</code>（前々回の結果）, <code>_5</code>（<code>Out[5]</code>に格納されている結果）などアンダースコアから始まる特殊な変数によって結果を参照できる。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>実は識別子に日本語を使ってもよいが普通の人はしない（文字変換するのが面倒、日本人以外が読めない、遠い昔に日本語の識別子のせいでエラーになって受けたトラウマがある、などの理由で）。なお、PythonではJavaScript等とは違って識別子に<code>$</code>は使えないし、Rとは違って<code>.</code>は特別な意味を持つ。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
-
-<p><a name="cite_note-23"></a>23.&nbsp;<a href="#cite_ref-23">^</a>
-いくつかの単語を組み合わせて名前を作るときの流儀として、よく使われるものに</p>
-<ul>
-<li>アンダースコア（<code>_</code>）で単語を<code>some_variable</code>のように連ねて書くスネークケース（snake case; ヘビっぽいから）、</li>
-<li>単語の先頭を大文字にして<code>SomeVariable</code>（あるいは<code>someVariable</code>）のように書くキャメルケース（camel case; 大文字がラクダのこぶっぽいから）、</li>
-</ul>
-<p>がある。キャメルケースは最初の文字も大文字にするアッパーキャメルケース（upper camel case）と、最初の文字は小文字にするローワーキャメルケース（lower camel case）がある。Pythonでは変数名、関数名、モジュール名などにはスネークケース、クラス名にはアッパーキャメルケースがよく用いられる。
-なお、世の中にはスネークケースとキャメルケースを区別しない（どちらのスタイルで書かれていても同一のものとして扱う）<a href="https://nim-lang.org/">Nim</a>という（特殊な）プログラミング言語もある。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/sentence-length -->
-
-<p><a name="cite_note-24"></a>24.&nbsp;<a href="#cite_ref-24">^</a>
-多くのプログラミング言語は大文字と小文字を区別する。区別しない言語の1つに<a href="https://fortran-lang.org/">Fortran</a>がある。Fortranは1950年代に登場したプログラミング言語であるが（その当時はFORTRANとすべて大文字で綴られていたし<a href="https://dajya-ranger.com/software/real-programmers-dont-use-pascal/">プログラマーは大文字で話していた</a>そうだ）、スーパーコンピューターを用いた大規模科学技術計算などで一定の需要があり、現在も進化を続けている。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/ja-unnatural-alphabet -->
-
-<p><a name="cite_note-25"></a>25.&nbsp;<a href="#cite_ref-25">^</a>
-英単語を名前に使っていたがスペルを間違えていた、というのがありがちなミスである。I（大文字のI）とl（小文字のL）と1（数字の1）、O（大文字のO）と0（数字の0）などを見間違えることも起こりやすい。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-26"></a>26.&nbsp;<a href="#cite_ref-26">^</a>
-注釈としての利用だけでなく、プログラムの特定の行をコメントとして一時的に無効にする（コメントアウト）のにも用いられる。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/sentence-length -->
-
-<p>なお、<code>"""</code>や<code>'''</code>のようなダブルクォートもしくはシングルクォート3つで挟んだトリプルクォート文字列（triple-quoted strings）を使うと改行を含む複数行のテキストを表すことができるが、これを複数行のコメントに使用することがある。特に、モジュールや関数の頭に書くトリプルクォート文字列はdocstringと呼ばれて特別な意味を持ち、そのモジュールや関数の説明がコメントとして記述される。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable
-ja-engineering-paper/prh,
-ja-technical-writing/max-ten,
-ja-technical-writing/sentence-length
--->
-
-<p><a name="cite_note-27"></a>27.&nbsp;<a href="#cite_ref-27">^</a>
-プログラミングには、変数や関数などの名前の付け方、スペースや改行の使い方、コメントの入れ方など、同じ意味のプログラムでもプログラムを書く人の好みによって変わりうる要素が存在する。これらのコーディング・スタイル（coding style）は、1つのプログラムの中では統一されていることが望ましいし、そのほうが読みやすい。複数人が関わるプロジェクトでどのコーディング・スタイルを採用するかは些細なことではあるが、些細なことに対する議論ほど紛糾しやすい（例：<a href="https://docs.freebsd.org/ja/books/faq/#_%E3%81%AA%E3%82%93%E3%81%A7%E3%83%90%E3%82%A4%E3%82%AF%E5%B0%8F%E5%B1%8B_bikeshed_%E3%81%AE%E8%89%B2%E3%81%AB%E3%81%BE%E3%81%A7%E6%B0%97%E3%82%92%E4%BD%BF%E3%82%8F%E3%81%AA%E3%81%91%E3%82%8C%E3%81%B0%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E3%82%93%E3%81%A7%E3%81%99%E3%81%8B">バイク小屋の色</a>）。Pythonでは、コーディング・スタイルに関して<a href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a>（<a href="https://pep8-ja.readthedocs.io/ja/latest/">日本語訳</a>）という公式文書が存在しており、多くのプロジェクトがこれ（あるいはこれに準じたもの）を採用している。初学者が過度にコーディング・スタイルを意識する必要はないが、初学者の読む例題プログラムが標準規約に従っていないのは望ましくないと<a href="https://qiita.com/nagataaaas/items/ba33c4c4e0df0b5aa0c4">批判を受ける</a>こともあるので、この講義の例題プログラムではできるだけPEP 8に従うこととする（というよりプログラムの整形を<a href="https://black.readthedocs.io/en/stable/">Black</a>というソフトウェアに丸投げしているので、だいたいそうなっている）。</p>
-<!-- textlint-enable -->
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-28"></a>28.&nbsp;<a href="#cite_ref-28">^</a>
-<code>sqrt</code>関数を<code>math</code>モジュールや（標準ライブラリではないが）<code>numpy</code>モジュールからインポートして使ってもよい。ただし、<code>sqrt</code>関数に負の値を与えた場合、エラーとなる。ちなみに複素関数が定義されている<a href="https://docs.python.org/ja/3/library/cmath.html"><code>cmath</code>モジュール</a>にも<code>sqrt</code>関数があって、こちらは負の値を与えてもエラーとならない（定義に従い複素数を返してくる）。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-29"></a>29.&nbsp;<a href="#cite_ref-29">^</a>
-三角形にならないような3辺の長さを与えた場合、根号の中が負となり、結果が複素数として返ってくる。たとえば筆者の環境では<code>(-1) ** (1 / 2)</code>を計算すると<code>(6.123233995736766e-17+1j)</code>という結果が返ってくるが、最後の<code>j</code>は虚部を表している。虚部の符号は、複素平面において平方根の分岐切断をどう定義するか、また計算機上で<code>0</code>は<code>+0</code>を意味するのかそれとも<code>-0</code>を意味するのかという規約に依存している。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-30"></a>30.&nbsp;<a href="#cite_ref-30">^</a>
-逆に、もっと適切な変数名をつけると、コメントが不要になることもある。以下のプログラムが何を意図しているかは（英語が分かれば）自明であろう。</p>
-<div class="highlight"><pre><span></span><span class="n">upper_base_length</span> <span class="o">=</span> <span class="mf">3.0</span>
-<span class="n">bottom_base_length</span> <span class="o">=</span> <span class="mf">5.0</span>
-<span class="n">height</span> <span class="o">=</span> <span class="mf">8.0</span>
-<span class="n">trapezoid_area</span> <span class="o">=</span> <span class="p">(</span><span class="n">upper_base_length</span> <span class="o">+</span> <span class="n">bottom_base_length</span><span class="p">)</span> <span class="o">*</span> <span class="n">height</span> <span class="o">/</span> <span class="mi">2</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-31"></a>31.&nbsp;<a href="#cite_ref-31">^</a>
-Pythonのモジュールの実態は、<code>.py</code>という拡張子を持つ、Pythonプログラムの書かれたテキストファイルである。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-32"></a>32.&nbsp;<a href="#cite_ref-32">^</a>
-あるいは<code>from モジュール名 import 名前1, 名前2</code>のように書くと、それらを<code>math</code>を付けずに参照できる。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">pi</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">cos</span><span class="p">(</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">3</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>math</code>を付けずに参照できるという意味では、次のコードと同じである（ただし上のコードは<code>math</code>という名前を束縛しない）。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-<span class="n">sin</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span>
-<span class="n">cos</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span>
-<span class="n">pi</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">cos</span><span class="p">(</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">3</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-33"></a>33.&nbsp;<a href="#cite_ref-33">^</a>
-単語や文章のように、文字（character）が連なったものを文字列（string）と呼ぶ。要はテキスト（text）のこと。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-34"></a>34.&nbsp;<a href="#cite_ref-34">^</a>
-プログラム中に直接記述された<code>42</code>、<code>6.02e23</code>、<code>"こんにちは"</code>などのデータ定数のことをリテラル（literal）と呼ぶ。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-35"></a>35.&nbsp;<a href="#cite_ref-35">^</a>
-ちなみに、ある式や変数のデータ型を知りたいときは<a href="https://docs.python.org/ja/3/library/functions.html#type"><code>type</code>関数</a>が使える。</p>
-<div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mf">1.0</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>             <span class="c1"># a の型 </span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">))</span>         <span class="c1"># a + b の型</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s2">&quot;42&quot;</span><span class="p">)))</span>     <span class="c1"># int(&quot;42&quot;) で得られる値の型</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="nb">int</span><span class="p">))</span>           <span class="c1"># int 自体の型</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ABC&quot;</span><span class="p">)))</span>  <span class="c1"># print(&quot;ABC&quot;)が&quot;ABC&quot;を表示した後に返してくる値の型</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="nb">print</span><span class="p">))</span>         <span class="c1"># print 関数の型</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="nb">type</span><span class="p">))</span>          <span class="c1"># type 自体の型</span>
-</pre></div>
-<p>実際にプログラムの中でデータ型に応じて条件分岐するときは<a href="https://docs.python.org/ja/3/library/functions.html#isinstance"><code>isinstance</code>関数</a>を使うとよい。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-36"></a>36.&nbsp;<a href="#cite_ref-36">^</a>
-ちなみに<code>print</code>関数に複数の引数を渡すと、デフォルトではスペースを挟みながら、すべて出力してくれる。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;さんは&quot;</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="s2">&quot;歳で身長&quot;</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="s2">&quot;センチメートルです。&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<pre><code>止田次郎 さんは 20 歳で身長 189 センチメートルです。</code></pre>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>print</code>関数で<code>sep</code>オプション引数を指定するとスペースを入れずに複数の引数を出力できる。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;さんは&quot;</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="s2">&quot;歳で身長&quot;</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="s2">&quot;センチメートルです。&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<pre><code>止田次郎さんは20歳で身長189センチメートルです。</code></pre>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a name="cite_note-37"></a>37.&nbsp;<a href="#cite_ref-37">^</a>
-止田次郎は<a href="https://www.jps.or.jp/">某学会</a>の講演予稿集のテンプレートに例として出てくる名前である。身長189cmという設定は止田次郎の元ネタ（つまり<a href="https://www.google.com/search?q=%E9%98%BF%E9%83%A8%E5%AF%9B%E3%81%AE%E8%BA%AB%E9%95%B7">この人</a>）から拝借した。ちなみに、<a href="https://ci.nii.ac.jp/">CiNii</a>で「止田次郎」を検索すると1件ヒットする（共同研究者には潟川学がいる）。実に興味深い。</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<!-- textlint-disable ja-technical-writing/no-doubled-joshi -->
-
-<p><a name="cite_note-38"></a>38.&nbsp;<a href="#cite_ref-38">^</a>
-フォーマット済み文字列リテラルはPython 3.6で導入された。それ以前は、<code>"{}さんは{}歳で身長{}センチメートルです。".format(name, age, height)</code>のように、<code>str</code>型の<code>format</code>メソッドを使う必要があった。なお、フォーマット済み文字列リテラルでは<code>format</code>メソッドと同じ<a href="https://docs.python.org/ja/3/library/string.html#format-specification-mini-language">書式指定</a>を受け付ける。ちなみに、Python 2.5以前では文字列フォーマット演算子（<code>%</code>）を使っていた。</p>
-<!-- textlint-enable -->
 </div>
 </div>
 </div>
