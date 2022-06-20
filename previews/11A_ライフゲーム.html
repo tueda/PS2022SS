@@ -14630,7 +14630,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>以下が（周期的境界条件を用いた）ライフゲームの実装である。この中でもっとも重要な関数は<code>evolve</code>であり、全セルの状態を1ステップ進める計算をしている。実際にライフゲームを実行するには<code>game_of_life</code>関数を使う<a name="cite_ref-2"></a><a href="#cite_note-2"><sup>[2]</sup></a>。</p>
+<p>以下が（周期的境界条件を用いた）ライフゲームの実装である。この中でもっとも重要な関数は<code>evolve</code>であり、全セルの状態を1ステップ進める計算をしている。実際にライフゲームを実行するには<code>game_of_life</code>関数を呼び出せばよい<a name="cite_ref-2"></a><a href="#cite_note-2"><sup>[2]</sup></a>。</p>
 
 </div>
 </div>
@@ -14654,17 +14654,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="kn">import</span> <span class="nn">re</span>
 
 
-<span class="k">def</span> <span class="nf">empty_cells</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;`(width, height)`のサイズの、すべて0のセルを作成して返す。&quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;int8&quot;</span><span class="p">)</span>
-
-
 <span class="k">def</span> <span class="nf">randomized_cells</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;`(width, height)`のサイズの、ランダムなセルを作成して返す。&quot;&quot;&quot;</span>
     <span class="n">cells</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;int8&quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">margin</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">cells</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pad</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="p">((</span><span class="n">margin</span><span class="p">,</span> <span class="n">margin</span><span class="p">),</span> <span class="p">(</span><span class="n">margin</span><span class="p">,</span> <span class="n">margin</span><span class="p">)))</span>
     <span class="k">return</span> <span class="n">cells</span>
+
+
+<span class="k">def</span> <span class="nf">empty_cells</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;`(width, height)`のサイズの、すべて0のセルを作成して返す。&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;int8&quot;</span><span class="p">)</span>
 
 
 <span class="nd">@functools</span><span class="o">.</span><span class="n">lru_cache</span><span class="p">(</span><span class="n">maxsize</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -15135,7 +15135,41 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 ja-engineering-paper/use-si-units
 -->
 
-<p>次のセルでは2022年6月14日に発見された<a href="https://conwaylife.com/wiki/P10_domino_fountain">周期10のドミノ噴水</a>（P10 domino fountain）を発生させている。RLEファイルへのリンクがまだないようなので、RLEファイルの内容をそのまま<code>load_cells</code>関数に渡している。</p>
+<p>次は周期59の<a href="https://conwaylife.com/wiki/Emu">エミュ</a>（p59 130×90 emu）である。</p>
+<!-- textlint-enable -->
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">cells</span> <span class="o">=</span> <span class="n">load_cells</span><span class="p">(</span><span class="s2">&quot;https://conwaylife.com/patterns/p59emu.rle&quot;</span><span class="p">)</span>
+<span class="n">game_of_life</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span> <span class="n">tmax</span><span class="o">=</span><span class="mi">58</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<!-- textlint-disable
+ja-engineering-paper/use-si-units
+-->
+
+<p>次のセルでは2022年6月14日に発見された<a href="https://conwaylife.com/wiki/P10_domino_fountain">周期10のドミノ噴水</a>（P10 domino fountain）を発生させている。2022年6月20日現在、RLEファイルへのリンクがまだないようなので、RLEファイルの内容をそのまま<code>load_cells</code>関数に渡している。</p>
 <!-- textlint-enable -->
 </div>
 </div>
@@ -15270,7 +15304,7 @@ Numbaの高速化がどのくらい効いているか知りたければ、<code>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><a name="cite_note-2"></a>2.&nbsp;<a href="#cite_ref-2">^</a>
-このコードの多くの部分（<code>read_from_url</code>関数から<code>load_cells</code>関数まで）はパターンファイルを読み込む処理のためのものであり、ライフゲームをランダムな初期条件から開始するのであれば必要ない。</p>
+このコードの多くの部分（<code>empty_cells</code>関数から<code>load_cells</code>関数まで）はパターンファイルを読み込む処理のためのものであり、ライフゲームをランダムな初期条件から開始するのであれば必要ない。</p>
 
 </div>
 </div>
