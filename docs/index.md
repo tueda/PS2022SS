@@ -78,7 +78,10 @@ ja-technical-writing/max-kanji-continuous-len
     - 基本セルオートマトン
     - ウルフラムの分類
     - グライダー
-1. 方程式の解
+1. [方程式の解](previews/12_方程式の解.html) [![Download ipynb](https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter)](notebooks/12_%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E8%A7%A3.ipynb){: download=12_方程式の解.ipynb} [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/12_%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E8%A7%A3.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/12_%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E8%A7%A3.ipynb?hl=ja)
+    - ラムダ式（`lambda`）
+    - ニュートン法
+    - 二分法
 1. 運動のシミュレーション
 1. まとめ演習
 
