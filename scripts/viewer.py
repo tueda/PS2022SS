@@ -16,6 +16,9 @@ StringList = List[str]
 ANSWER_MARKER = r"#\s*課題解答\s*\d[\d.]*"
 
 
+clipboard_encoding = "utf-8"
+
+
 def copy_to_clipboard(text: str, check: bool = True) -> None:
     """Copy the given text to the clipboard."""
 
@@ -28,8 +31,7 @@ def copy_to_clipboard(text: str, check: bool = True) -> None:
             )
             if not p.stdin:
                 raise RuntimeError("Popen failed")
-            p.stdin.write(text.encode("utf-8"))
-            # p.stdin.write(text.encode("shift_jis"))
+            p.stdin.write(text.encode(clipboard_encoding))
             p.stdin.close()
             return p.wait() == 0
         return False
@@ -338,7 +340,17 @@ def main(stdscr: "curses._CursesWindow") -> None:
 
                 copy_to_clipboard("\n".join([line1, line2] + lines[2:]))
 
+        def input_common(key: str) -> None:
+            global clipboard_encoding
+
+            if key == "U":
+                clipboard_encoding = "utf-8"
+            elif key == "S":
+                clipboard_encoding = "shift_jis"
+
         def input_dirtree_screen(key: str) -> bool:
+            input_common(key)
+
             nonlocal selected_dir
 
             if key == "Q":
@@ -354,6 +366,8 @@ def main(stdscr: "curses._CursesWindow") -> None:
             return False
 
         def input_answer_screen(key: str) -> bool:
+            input_common(key)
+
             nonlocal selected_answer
 
             if not answers:
