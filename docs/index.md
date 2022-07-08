@@ -82,8 +82,9 @@ ja-technical-writing/max-kanji-continuous-len
     - ラムダ式（`lambda`）
     - ニュートン法
     - 二分法
-1. 運動のシミュレーション
+1. [運動のシミュレーション](previews/13_運動のシミュレーション.html) [![Download ipynb](https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter)](notebooks/13_%E9%81%8B%E5%8B%95%E3%81%AE%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.ipynb){: download=13_運動のシミュレーション.ipynb} [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/13_%E9%81%8B%E5%8B%95%E3%81%AE%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/13_%E9%81%8B%E5%8B%95%E3%81%AE%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.ipynb?hl=ja)
 1. まとめ演習
+    - 当日、CoursePowerに出します。
 
 <!-- don't want to merge two consecutive lists -->
 
