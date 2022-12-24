@@ -69,11 +69,13 @@ ja-technical-writing/max-kanji-continuous-len
     - 2次元ランダムウォーク
     - 集合型（`set`）
     - 自己回避ランダムウォーク
+    - 【発展】ランダムウォークが最大値と最小値をとる時刻の差
 1. [フラクタル](previews/10_フラクタル.html) [![Download ipynb](https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter)](notebooks/10_%E3%83%95%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%AB.ipynb){: download=10_フラクタル.ipynb} [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/10_%E3%83%95%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%AB.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/10_%E3%83%95%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%AB.ipynb?hl=ja)
     - コッホ曲線
     - シェルピンスキーのギャスケット
     - バーンズリーのシダ
     - アポロニウスの窓
+    - 【発展】パスカルの三角形とシェルピンスキーのギャスケット
 1. [セルオートマトン](previews/11_セルオートマトン.html) [![Download ipynb](https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter)](notebooks/11_%E3%82%BB%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%83%88%E3%83%B3.ipynb){: download=11_セルオートマトン.ipynb} [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/11_%E3%82%BB%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%83%88%E3%83%B3.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/11_%E3%82%BB%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%83%88%E3%83%B3.ipynb?hl=ja)
     - 基本セルオートマトン
     - ウルフラムの分類
@@ -82,6 +84,7 @@ ja-technical-writing/max-kanji-continuous-len
     - ラムダ式（`lambda`）
     - ニュートン法
     - 二分法
+    - 【発展】ニュートン・フラクタル
 1. [運動のシミュレーション](previews/13_運動のシミュレーション.html) [![Download ipynb](https://img.shields.io/badge/download-ipynb-brightgreen.svg?logo=jupyter)](notebooks/13_%E9%81%8B%E5%8B%95%E3%81%AE%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.ipynb){: download=13_運動のシミュレーション.ipynb} [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tueda/PS2022SS/gh-pages?filepath=notebooks/13_%E9%81%8B%E5%8B%95%E3%81%AE%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tueda/PS2022SS/blob/gh-pages/notebooks/13_%E9%81%8B%E5%8B%95%E3%81%AE%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.ipynb?hl=ja)
     - オイラー法
     - 1次元調和振動子
