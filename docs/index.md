@@ -164,6 +164,8 @@ ja-technical-writing/max-kanji-continuous-len
   講義の補助資料。この授業（物理シミュレーション）よりも物理寄り。
 - [コンピュータ処理](https://amorphous.tf.chiba-u.jp/lecture.files/chem_computer/index.html)（大窪貴洋氏）：
   化学屋さん寄り（たぶん）のPythonの講義録。
+- [Pythonで学ぶ入門計量経済学](https://py4etrics.github.io/index.html)（春山鉄源氏）：
+  計量経済学を通して学ぶPython入門。
 - [Pythonプログラミング入門](https://utokyo-ipp.github.io/index.html)（東京大学数理・情報教育研究センター）：
   Pythonの詳細な講義録。
 - [プログラミング演習 Python 2021](https://hdl.handle.net/2433/265459)（喜多一氏、森村吉貴氏、岡本雅子氏）：
