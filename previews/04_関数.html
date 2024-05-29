@@ -16530,9 +16530,31 @@ ja-technical-writing/ja-no-mixed-period
 初学者は完全に理解しなくてもよいが、Pythonは引数をともなう関数呼び出しにおいて、値呼び（call by value、あるいは値渡し；pass by valueとも呼ばれる）を評価戦略（evaluation strategy）として採用している。呼び出し側で実引数として変数を与えた場合、その変数が評価され、結果の値が関数側の仮引数として新たな変数に束縛される。よって関数内で仮引数である変数に代入操作を行っても呼び出し側の実引数である変数に<strong>影響を与えない</strong>。CやJavaも、Pythonと同様に値呼びを採用している。一方、多くのFortranのシステムは参照呼び（call by reference、あるいは参照渡し；pass by reference）を採用しており、仮引数である変数への代入は呼び出し側の実引数に<strong>影響する</strong>。C++やC#、VBAなどは値呼び、参照呼びのどちらを使うかを指定できる。</p>
 <p>さて、JavaやPythonなどには参照呼び・参照渡しは言語仕様として存在しないのだが、関数への実引数としてオブジェクトを与えると<strong>オブジェクトへの参照が値渡し</strong>される。ネットではどうも<a href="https://qiita.com/raccy/items/d4c5e7995a8fc90109ee">そのことを参照渡しと呼んでしまう界隈</a>が存在するらしい。残念ながら本来の意味とは違う意味で「参照渡し」という用語が使われてしまっているわけだが、皆さんは誤解しないでいただきたい。</p>
 <!-- textlint-enable -->
-<!-- textlint-disable ja-engineering-paper/prh,ja-technical-writing/ja-no-weak-phrase -->
+<!-- textlint-disable ja-technical-writing/ja-no-mixed-period,ja-technical-writing/max-kanji-continuous-len -->
 
-<p>リストのようにミュータブルなオブジェクトを関数の実引数として渡すと、上記のように関数側には参照が値渡しされるため、仮引数である変数への操作（要素の追加、上書きなどの変更）は呼び出し側に影響する。が、無用な混乱をさけるため、この授業ではそのような操作はしない（と思う）。引数で渡す代わりに今回の発展課題の<code>m</code>のようにグローバル変数を使う。</p>
+<p>とは言え、手元にある文科省検定済みの高校情報Iの某教科書を眺めてみてもPythonの説明として</p>
+<!-- textlint-enable -->
+<!-- textlint-disable ja-technical-writing/ja-unnatural-alphabet -->
+
+<blockquote><p>図３の仮引数のxは配列であるため参照渡しになり，</p>
+</blockquote>
+<!-- textlint-enable -->
+<!-- textlint-disable ja-technical-writing/sentence-length -->
+
+<p>のように書いていて（この教科書はリストのことを「配列」と呼んでいる）、現在の<a href="https://qiita.com/nodai2h_ITC/items/6c7b7ad029adf17da5f0">高校の情報教科書</a>で学んだ高校生がこれから大学に入学したり実社会に飛び出してしまったりすることを考えると波乱の予感しかしない。</p>
+<!-- textlint-enable -->
+<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
+
+<p>再度強調しておくが、Pythonに参照渡しはない。
+<a href="https://docs.python.org/ja/3/faq/programming.html#how-do-i-write-a-function-with-output-parameters-call-by-reference">Python公式サイトのFAQ</a>にも</p>
+<!-- textlint-enable -->
+
+<blockquote><p>前提として、Python では引数は代入によって渡されます。代入はオブジェクトへの参照を作るだけなので、呼び出し元と呼び出し先にある引数名の間にエイリアスはありませんし、参照渡しそれ自体はありません。</p>
+</blockquote>
+<p>と明言されている。</p>
+<!-- textlint-disable ja-engineering-paper/prh,ja-technical-writing/ja-no-weak-phrase,ja-technical-writing/sentence-length -->
+
+<p>ここまで長々と書いてしまったが、リストのようにミュータブルなオブジェクトを関数の実引数として渡すと、上記のように関数側には参照が値渡しされるため、仮引数である変数への操作（要素の追加、上書きなどの変更）は呼び出し側に影響する。が、無用な混乱をさけるため、この授業ではそのような操作はしない（と思う）。引数で渡す代わりに今回の発展課題の<code>m</code>のようにグローバル変数を使う。</p>
 <!-- textlint-enable -->
 </div>
 </div>
