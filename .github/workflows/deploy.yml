@@ -1,15 +1,13 @@
 name: Deploy
 
-on:
-  push:
-    branches: release
+on: [push, pull_request]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -17,15 +15,19 @@ jobs:
         run: pipx install poetry
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: deadsnakes/action@v3.2.0
         with:
           python-version: '3.7'
-          cache: 'poetry'
 
       - name: Install dependencies
-        run: poetry install
+        run: poetry install --no-root
+
+      - name: Build
+        if: ${{ github.ref_type != 'branch' || ! startsWith(github.ref_name, 'release') }}
+        run: poetry run mkdocs build
 
       - name: Deploy
+        if: ${{ github.ref_type == 'branch' && startsWith(github.ref_name, 'release') }}
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
