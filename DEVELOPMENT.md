@@ -54,7 +54,7 @@ sudo apt-get install python3.7
 
 # Set up the development environment.
 poetry env use python3.7
-poetry install
+poetry install --no-root
 poetry run task prepare
 ```
 Python 3.7 is now in the security-fix phase.

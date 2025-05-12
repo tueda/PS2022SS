@@ -168,7 +168,7 @@ ja-technical-writing/max-kanji-continuous-len
   計量経済学を通して学ぶPython入門。
 - [Pythonプログラミング入門](https://utokyo-ipp.github.io/index.html)（東京大学数理・情報教育研究センター）：
   Pythonの詳細な講義録。
-- [プログラミング演習 Python 2021](https://hdl.handle.net/2433/265459)（喜多一氏、森村吉貴氏、岡本雅子氏）：
+- [プログラミング演習 Python 2023](https://hdl.handle.net/2433/285599)（喜多一氏、森村吉貴氏、岡本雅子氏）：
   PDFファイルとして公開されている講義録。
 - [機械学習帳](https://chokkan.github.io/mlnote/)（岡崎直観氏）：
   Pythonによる機械学習の講義資料。
